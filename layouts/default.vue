@@ -1,7 +1,8 @@
 <template>
-  <div class="wrapper">
+  <div>
     <Header />
     <nuxt />
-    <ColorModePicker />
+    <!-- <ColorModePicker /> -->
+    <Footer />
   </div>
 </template>

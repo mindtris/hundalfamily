@@ -10,13 +10,13 @@
 <script>
 export default {
   async asyncData({ $content, error }) {
-    let posts;
+    let posts
     try {
-      posts = await $content("blog").fetch();
+      posts = await $content('blog').fetch()
     } catch (e) {
-      error({ message: "Blog posts not found" });
+      error({ message: 'Blog posts not found' })
     }
-    return { posts };
+    return { posts }
   },
 }
 </script>
