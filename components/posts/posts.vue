@@ -1,5 +1,30 @@
 <template>
-  <ul v-if="posts.length > 0" class="cards">
+  <div v-if="posts.length > 0">
+    <div class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start">
+      <article v-for="(post, index) in posts" :key="index" class="flex flex-col h-full" data-aos="fade-up">
+        <header>
+          <!-- <nuxt-link to="/blog-post" class="block mb-6">
+                  <figure class="relative h-0 pb-9/16 overflow-hidden rounded-sm">
+                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="../images/news-01.jpg" width="352" height="198" alt="News 01">
+                  </figure>
+                </nuxt-link> -->
+          <h3 class="h4 mb-2">
+            <nuxt-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out">{{
+              post.title
+            }}</nuxt-link>
+          </h3>
+        </header>
+        <p class="text-lg text-gray-400 flex-grow">{{ post.description }}</p>
+        <footer class="flex items-center mt-4">
+          <div class="font-medium">
+            <span class="text-gray-500">{{ formatDate(post.createdAt) }}</span>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </div>
+
+  <!-- <ul v-if="posts.length > 0" class="cards">
     <li v-for="(post, index) in posts" :key="index">
       <nuxt-link :to="`${postType}/${post.slug}`" class="card card--clickable">
         <template v-if="postType === 'projects'">
@@ -14,7 +39,7 @@
         </template>
 
         <template v-else>
-          <span class="w-full">
+         <span class="w-full">
             <span class="flex justify-between align-baseline">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
@@ -36,7 +61,7 @@
               </h6>
             </span>
             <p class="mt-2">{{ post.description }}</p>
-          </span>
+          </span> 
         </template>
       </nuxt-link>
     </li>
@@ -50,7 +75,7 @@
   </div>
   <p v-else class="max-w-5xl mx-auto">
     {{ amount > 1 ? 'Posts not found' : 'Post not found' }}
-  </p>
+  </p> -->
 </template>
 
 <script>

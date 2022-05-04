@@ -3,7 +3,7 @@
     <section v-if="posts" class="w-full max-w-5xl mx-auto">
       <PageIllustration />
       <div class="relative pt-32 pb-10 md:pt-40 md:pb-16">
-        <h1 class="title">Blog</h1>
+        <h4 class="h4 pb-6 mb-10 border-b border-gray-700" data-aos="fade-up">Latest stories</h4>
         <posts post-type="blog" :amount="10" />
       </div>
     </section>
