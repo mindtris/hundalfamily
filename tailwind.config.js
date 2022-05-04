@@ -10,43 +10,133 @@ module.exports = {
     darkMode: 'class',
     extend: {
       fontFamily: {
-        sans: ['Inter']
+        sans: ['Inter'],
       },
       colors: {
         gray: {
-          '50': 'var(--color-gray-50)', // #F9FAFB
-          '100': 'var(--color-gray-100)', // #F3F4F6
-          '200': 'var(--color-gray-200)', // #E5E7EB
-          '300': 'var(--color-gray-300)', // #D1D5DB
-          '400': 'var(--color-gray-400)', // #9CA3AF
-          DEFAULT: 'var(--color-gray)', // #6B7280
-          '600': 'var(--color-gray-600)', // #4B5563
-          '700': 'var(--color-gray-700)', // #374151
-          '800': 'var(--color-gray-800)', // #1F2937
-          '900': 'var(--color-gray-900)' // #111827
+          100: '#EBF1F5',
+          200: '#D9E3EA',
+          300: '#C5D2DC',
+          400: '#9BA9B4',
+          500: '#707D86',
+          600: '#55595F',
+          700: '#33363A',
+          800: '#25282C',
+          900: '#151719',
+        },
+        purple: {
+          100: '#F4F4FF',
+          200: '#E2E1FF',
+          300: '#CBCCFF',
+          400: '#ABABFF',
+          500: '#8D8DFF',
+          600: '#5D5DFF',
+          700: '#4B4ACF',
+          800: '#38379C',
+          900: '#262668',
         },
         primary: {
-          '100': 'var(--color-primary-100)', // #ECEFF5
-          '200': 'var(--color-primary-200)', // #C3CBDC
-          '300': 'var(--color-primary-300)', // #9BA8C2
-          '400': 'var(--color-primary-400)', // #7686A6
+          100: 'var(--color-primary-100)', // #ECEFF5
+          200: 'var(--color-primary-200)', // #C3CBDC
+          300: 'var(--color-primary-300)', // #9BA8C2
+          400: 'var(--color-primary-400)', // #7686A6
           DEFAULT: 'var(--color-primary)', // #526488
-          '600': 'var(--color-primary-600)', // #3E4F70
-          '700': 'var(--color-primary-700)', // #2C3A57
-          '800': 'var(--color-primary-800)', // #1C263B
-          '900': 'var(--color-primary-900)' // #0D131E
-        }
+          600: 'var(--color-primary-600)', // #3E4F70
+          700: 'var(--color-primary-700)', // #2C3A57
+          800: 'var(--color-primary-800)', // #1C263B
+          900: 'var(--color-primary-900)', // #0D131E
+        },
       },
+      spacing: {
+        '9/16': '56.25%',
+        '3/4': '75%',
+        '1/1': '100%',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        'architects-daughter': ['"Architects Daughter"', 'sans-serif'],
+      },
+      fontSize: {
+        xs: '0.75rem',
+        sm: '0.875rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '2rem',
+        '4xl': '2.5rem',
+        '5xl': '3.25rem',
+        '6xl': '4rem',
+      },
+      inset: {
+        full: '100%',
+      },
+      letterSpacing: {
+        tighter: '-0.02em',
+        tight: '-0.01em',
+        normal: '0',
+        wide: '0.01em',
+        wider: '0.02em',
+        widest: '0.4em',
+      },
+      minWidth: {
+        10: '2.5rem',
+      },
+      scale: {
+        98: '.98',
+      },
+      customForms: (theme) => ({
+        default: {
+          'input, textarea, multiselect, select, checkbox, radio': {
+            backgroundColor: 'transparent',
+            borderColor: theme('colors.gray.700'),
+            borderRadius: theme('borderRadius.sm'),
+            '&:focus': {
+              outline: undefined,
+              boxShadow: undefined,
+              borderColor: theme('colors.gray.500'),
+            },
+          },
+          'input, textarea, multiselect, select': {
+            backgroundColor: 'transparent',
+            fontSize: undefined,
+            lineHeight: undefined,
+            paddingTop: theme('spacing.3'),
+            paddingRight: theme('spacing.4'),
+            paddingBottom: theme('spacing.3'),
+            paddingLeft: theme('spacing.4'),
+          },
+          'input, textarea': {
+            '&::placeholder': {
+              color: theme('colors.gray.500'),
+            },
+          },
+          select: {
+            paddingRight: theme('spacing.10'),
+            iconColor: theme('colors.gray.500'),
+          },
+          'checkbox, radio': {
+            color: theme('colors.purple.600'),
+            backgroundColor: 'transparent',
+          },
+        },
+      }),
       screens: {
-        xs: '480px' // Added xs
+        xs: '480px', // Added xs
         // 'sm': '640px',
         // 'md': '768px',
         // 'lg': '1024px',
         // 'xl': '1280px',
-      }
-    }
+      },
+    },
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    translate: ['responsive', 'hover', 'focus', 'group-hover'],
+    boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+  },
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
@@ -54,6 +144,6 @@ module.exports = {
     content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
     options: {
       // Set safelist in nuxt.config.js -> purgeCSS.safelist: ['btn', 'icon']
-    }
-  }
+    },
+  },
 }

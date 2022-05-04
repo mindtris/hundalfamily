@@ -48,6 +48,23 @@
             </li>
             <li>
               <nuxt-link
+                to="/about-us"
+                class="
+                  text-gray-300
+                  hover:text-gray-200
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >About</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link
                 to="/blog"
                 class="
                   text-gray-300
@@ -60,7 +77,24 @@
                   duration-150
                   ease-in-out
                 "
-                >Blog</nuxt-link
+                >Stories</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link
+                to="/projects"
+                class="
+                  text-gray-300
+                  hover:text-gray-200
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >Projects</nuxt-link
               >
             </li>
             <li>
@@ -77,24 +111,7 @@
                   duration-150
                   ease-in-out
                 "
-                >Contact Us</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link
-                to="/about-us"
-                class="
-                  text-gray-300
-                  hover:text-gray-200
-                  px-4
-                  py-2
-                  flex
-                  items-center
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                >About Us</nuxt-link
+                >Contact</nuxt-link
               >
             </li>
           </ul>
@@ -178,7 +195,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.wrapper {
+/* .wrapper {
   padding-top: 0;
 }
 .scrim-bg {
@@ -212,9 +229,9 @@ export default {
     @apply text-primary-700 border-gray-600 bg-gray-100;
   }
 }
-
+*/
 /* Need two because of smoother switching between color modes */
-@keyframes fadeIn1 {
+/*@keyframes fadeIn1 {
   from {
     opacity: 0;
   }
@@ -229,5 +246,5 @@ export default {
   to {
     opacity: 1;
   }
-}
+} */
 </style>
