@@ -14,25 +14,8 @@
             <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure class="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                    <img
-                      class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
-                        object-cover
-                        transform
-                        hover:scale-105
-                        transition
-                        duration-700
-                        ease-out
-                      "
-                      src="../../assets/images/news-01.jpg"
-                      width="352"
-                      height="198"
-                      alt="News 01"
-                    />
+                  <figure class="relative pb-9/16 rounded-sm">
+                    <img src="../../assets/images/news-01.jpg" width="352" height="198" alt="News 01" />
                   </figure>
                 </nuxt-link>
                 <div class="mb-3">
@@ -109,25 +92,8 @@
             <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure class="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                    <img
-                      class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
-                        object-cover
-                        transform
-                        hover:scale-105
-                        transition
-                        duration-700
-                        ease-out
-                      "
-                      src="../../assets/images/news-02.jpg"
-                      width="352"
-                      height="198"
-                      alt="News 02"
-                    />
+                  <figure class="relative pb-9/16 rounded-sm">
+                    <img src="../../assets/images/news-02.jpg" width="352" height="198" alt="News 02" />
                   </figure>
                 </nuxt-link>
                 <div class="mb-3">
@@ -204,25 +170,8 @@
             <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure class="relative h-0 pb-9/16 overflow-hidden rounded-sm">
-                    <img
-                      class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
-                        object-cover
-                        transform
-                        hover:scale-105
-                        transition
-                        duration-700
-                        ease-out
-                      "
-                      src="../../assets/images/news-03.jpg"
-                      width="352"
-                      height="198"
-                      alt="News 03"
-                    />
+                  <figure class="relative pb-9/16 rounded-sm">
+                    <img src="../../assets/images/news-03.jpg" width="352" height="198" alt="News 03" />
                   </figure>
                 </nuxt-link>
                 <div class="mb-3">
