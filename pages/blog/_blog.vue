@@ -1,4 +1,4 @@
-<template>
+<!--template>
   <main>
     <section v-if="post">
       <nav class="mb-8" aria-label="go back">
@@ -18,7 +18,7 @@
       </article>
     </section>
   </main>
-</template>
+</template> -->
 
 <script>
 export default {
