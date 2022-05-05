@@ -164,16 +164,19 @@
           >
             <ul class="bg-gray-800 px-4 py-2">
               <li>
-                <nuxt-link to="/" class="flex text-gray-300 hover:text-gray-200 py-2">Home</nuxt-link>
+                <nuxt-link to="/home" class="flex text-gray-300 hover:text-gray-200 py-2">Home</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/blog" class="flex text-gray-300 hover:text-gray-200 py-2">Blog</nuxt-link>
+                <nuxt-link to="/about-us" class="flex text-gray-300 hover:text-gray-200 py-2">About</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/contact-us" class="flex text-gray-300 hover:text-gray-200 py-2">Contact Us</nuxt-link>
+                <nuxt-link to="/blog" class="flex text-gray-300 hover:text-gray-200 py-2">Stories</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/about-u" class="flex text-gray-300 hover:text-gray-200 py-2">About us</nuxt-link>
+                <nuxt-link to="/projects" class="flex text-gray-300 hover:text-gray-200 py-2">Projects</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/contact-us" class="flex text-gray-300 hover:text-gray-200 py-2">Contact</nuxt-link>
               </li>
             </ul>
           </nav>
