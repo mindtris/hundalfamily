@@ -10,7 +10,8 @@ module.exports = {
     darkMode: 'class',
     extend: {
       fontFamily: {
-        sans: ['Inter'],
+        inter: ['Inter', 'sans-serif'],
+        'architects-daughter': ['"Architects Daughter"', 'sans-serif'],
       },
       colors: {
         gray: {
@@ -48,9 +49,41 @@ module.exports = {
         },
       },
       spacing: {
-        '9/16': '56.25%',
-        '3/4': '75%',
-        '1/1': '100%',
+        px: '1px',
+        0: '0',
+        0.5: '0.125rem',
+        1: '0.25rem',
+        1.5: '0.375rem',
+        2: '0.5rem',
+        2.5: '0.625rem',
+        3: '0.75rem',
+        3.5: '0.875rem',
+        4: '1rem',
+        5: '1.25rem',
+        6: '1.5rem',
+        7: '1.75rem',
+        8: '2rem',
+        9: '2.25rem',
+        10: '2.5rem',
+        11: '2.75rem',
+        12: '3rem',
+        14: '3.5rem',
+        16: '4rem',
+        20: '5rem',
+        24: '6rem',
+        28: '7rem',
+        32: '8rem',
+        36: '9rem',
+        40: '10rem',
+        44: '11rem',
+        48: '12rem',
+        52: '13rem',
+        56: '14rem',
+        60: '15rem',
+        64: '16rem',
+        72: '18rem',
+        80: '20rem',
+        96: '24rem',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
@@ -85,42 +118,6 @@ module.exports = {
       scale: {
         98: '.98',
       },
-      customForms: (theme) => ({
-        default: {
-          'input, textarea, multiselect, select, checkbox, radio': {
-            backgroundColor: 'transparent',
-            borderColor: theme('colors.gray.700'),
-            borderRadius: theme('borderRadius.sm'),
-            '&:focus': {
-              outline: undefined,
-              boxShadow: undefined,
-              borderColor: theme('colors.gray.500'),
-            },
-          },
-          'input, textarea, multiselect, select': {
-            backgroundColor: 'transparent',
-            fontSize: undefined,
-            lineHeight: undefined,
-            paddingTop: theme('spacing.3'),
-            paddingRight: theme('spacing.4'),
-            paddingBottom: theme('spacing.3'),
-            paddingLeft: theme('spacing.4'),
-          },
-          'input, textarea': {
-            '&::placeholder': {
-              color: theme('colors.gray.500'),
-            },
-          },
-          select: {
-            paddingRight: theme('spacing.10'),
-            iconColor: theme('colors.gray.500'),
-          },
-          'checkbox, radio': {
-            color: theme('colors.purple.600'),
-            backgroundColor: 'transparent',
-          },
-        },
-      }),
       screens: {
         xs: '480px', // Added xs
         // 'sm': '640px',
@@ -137,7 +134,7 @@ module.exports = {
     boxShadow: ['responsive', 'hover', 'focus', 'focus-within'],
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',

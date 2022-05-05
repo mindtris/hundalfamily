@@ -17,3 +17,29 @@
 @tailwind components;
 @tailwind utilities;
 /* If you need to let Tailwind classes overwrite your own classes, they need to be beneath this */
+
+@layer components {
+  .form-input,
+  .form-select,
+  .form-textarea {
+    @apply bg-transparent;
+    padding-top: theme('spacing.3');
+    padding-right: theme('spacing.4');
+    padding-bottom: theme('spacing.3');
+    padding-left: theme('spacing.4');
+  }
+
+  .btn {
+    @apply text-white bg-purple-600;
+    &.btn--active {
+      @apply text-white bg-purple-600 border-primary;
+      &:hover {
+        @apply bg-purple-700;
+      }
+    }
+  }
+
+  .btn:hover {
+    @apply bg-purple-700;
+  }
+}
