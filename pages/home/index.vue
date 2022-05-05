@@ -3,6 +3,7 @@
     <section class="w-full max-w-5xl mx-auto">
       <PageIllustration />
       <home />
+      <process />
       <blog-list />
     </section>
   </main>
@@ -10,8 +11,9 @@
 
 <script>
 import blogList from '~/components/home/blog-list.vue'
+import process from '~/components/home/process.vue'
 export default {
-  components: { blogList },
+  components: { blogList, process },
   // async asyncData({ $content, error }) {
   //   let posts
   //   try {
