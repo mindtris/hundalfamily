@@ -96,12 +96,12 @@
                   </ul>
                 </div>
                 <h3 class="h3 text-2xl lg:text-3xl mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >Designing a functional workflow at home.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat.
               </p>
@@ -116,7 +116,7 @@
                   />
                 </a>
                 <div>
-                  <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="font-medium text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Chris Solerieu</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -180,12 +180,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -200,7 +200,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Anastasia Dan</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -258,12 +258,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -278,7 +278,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Markus Barker</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -336,12 +336,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -356,7 +356,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Lisa Crockett</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -414,12 +414,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -434,7 +434,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Alexandra Smith</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -474,12 +474,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -494,7 +494,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Lisa Crockett</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -552,12 +552,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -572,7 +572,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Anton Sebastian</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -630,12 +630,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -650,7 +650,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Markus Barker</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -708,12 +708,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -728,7 +728,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Anastasia Dan</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -768,12 +768,12 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</router-link
                   >
                 </h3>
               </header>
-              <p class="text-lg text-gray-400 flex-grow">
+              <p class="text-lg text-gray-500 flex-grow">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -788,7 +788,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-400 transition duration-150 ease-in-out" href="#0"
                     >Markus Barker</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -813,7 +813,7 @@
                   bg-gray-800
                   px-4
                   rounded-full
-                  text-gray-500
+                  text-gray-300
                 "
                 >Prev</span
               >
@@ -957,12 +957,12 @@
                   </figure>
                 </nuxt-link> 
           <h3 class="h4 mb-2">
-            <nuxt-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out">{{
+            <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out">{{
               post.title
             }}</nuxt-link>
           </h3>
         </header>
-        <p class="text-lg text-gray-400 flex-grow">{{ post.description }}</p>
+        <p class="text-lg text-gray-500 flex-grow">{{ post.description }}</p>
         <footer class="flex items-center mt-4">
           <div class="font-medium">
             <span class="text-gray-500">{{ formatDate(post.createdAt) }}</span>

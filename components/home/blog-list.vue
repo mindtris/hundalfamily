@@ -59,7 +59,7 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <nuxt-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <nuxt-link to="/blog-post" class="hover:text-gray-200 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
@@ -79,7 +79,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-200 transition duration-150 ease-in-out" href="#0"
                     >Anastasia Dan</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -137,7 +137,7 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <nuxt-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <nuxt-link to="/blog-post" class="hover:text-gray-200 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
@@ -157,7 +157,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-200 transition duration-150 ease-in-out" href="#0"
                     >Markus Barker</a
                   >
                   <span class="text-gray-700"> - </span>
@@ -215,7 +215,7 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <nuxt-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out"
+                  <nuxt-link to="/blog-post" class="hover:text-gray-200 transition duration-150 ease-in-out"
                     >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
@@ -235,7 +235,7 @@
                   />
                 </a>
                 <div class="font-medium">
-                  <a class="text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0"
+                  <a class="text-gray-500 hover:text-gray-200 transition duration-150 ease-in-out" href="#0"
                     >Lisa Crockett</a
                   >
                   <span class="text-gray-700"> - </span>

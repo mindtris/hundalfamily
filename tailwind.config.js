@@ -7,7 +7,7 @@
 
 module.exports = {
   theme: {
-    darkMode: 'class',
+    lightMode: 'class',
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
@@ -26,15 +26,15 @@ module.exports = {
           900: '#151719',
         },
         purple: {
-          100: '#F4F4FF',
-          200: '#E2E1FF',
-          300: '#CBCCFF',
-          400: '#ABABFF',
-          500: '#8D8DFF',
-          600: '#5D5DFF',
-          700: '#4B4ACF',
-          800: '#38379C',
-          900: '#262668',
+          100: '#ffb703',
+          200: '#ffb703',
+          300: '#ffb703',
+          400: '#ffb703',
+          500: '#ffb703',
+          600: '#ffb703',
+          700: '#ffb703',
+          800: '#ffb703',
+          900: '#ffb703',
         },
         primary: {
           100: 'var(--color-primary-100)', // #ECEFF5

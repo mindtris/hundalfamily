@@ -21,7 +21,7 @@
             <form class="max-w-xl mx-auto">
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="first-name"
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="first-name"
                     >First Name <span class="text-red-600">*</span></label
                   >
                   <input
@@ -34,7 +34,7 @@
                   <p class="text-red-500 text-sm mt-2">This field is required</p>
                 </div>
                 <div class="w-full md:w-1/2 px-3">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="last-name"
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="last-name"
                     >Last Name <span class="text-red-600">*</span></label
                   >
                   <input
@@ -48,7 +48,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="email"
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="email"
                     >Email <span class="text-red-600">*</span></label
                   >
                   <input
@@ -62,7 +62,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="subject"
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="subject"
                     >Subject <span class="text-red-600">*</span></label
                   >
                   <input
@@ -76,7 +76,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="country">Country</label>
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="country">Country</label>
                   <select id="country" class="form-select w-full text-gray-300">
                     <option>United States</option>
                     <option>United Kingdom</option>
@@ -86,7 +86,7 @@
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <label class="block text-gray-300 text-sm font-medium mb-1" for="message">Message</label>
+                  <label class="block text-gray-700 text-sm font-medium mb-1" for="message">Message</label>
                   <textarea
                     id="message"
                     rows="4"

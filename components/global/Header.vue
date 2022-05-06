@@ -33,8 +33,8 @@
               <nuxt-link
                 to="/home"
                 class="
-                  text-gray-300
-                  hover:text-gray-200
+                  text-primary-800
+                  hover:text-primary-300
                   px-4
                   py-2
                   flex
@@ -50,8 +50,8 @@
               <nuxt-link
                 to="/about-us"
                 class="
-                  text-gray-300
-                  hover:text-gray-200
+                  text-primary-800
+                  hover:text-primary-300
                   px-4
                   py-2
                   flex
@@ -67,8 +67,8 @@
               <nuxt-link
                 to="/blog"
                 class="
-                  text-gray-300
-                  hover:text-gray-200
+                  text-primary-800
+                  hover:text-primary-300
                   px-4
                   py-2
                   flex
@@ -84,8 +84,8 @@
               <nuxt-link
                 to="/projects"
                 class="
-                  text-gray-300
-                  hover:text-gray-200
+                  text-primary-800
+                  hover:text-primary-300
                   px-4
                   py-2
                   flex
@@ -101,8 +101,8 @@
               <nuxt-link
                 to="/contact-us"
                 class="
-                  text-gray-300
-                  hover:text-gray-200
+                  text-primary-800
+                  hover:text-primary-300
                   px-4
                   py-2
                   flex

@@ -39,7 +39,7 @@
                 stroke-linecap="square"
               />
             </svg>
-            <h4 class="h4 mb-2"><span class="text-gray-400">1</span>. Acquisition</h4>
+            <h4 class="h4 mb-2">1. Acquisition</h4>
             <p class="text-lg text-gray-400 text-center">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
@@ -71,7 +71,7 @@
                 />
               </g>
             </svg>
-            <h4 class="h4 mb-2"><span class="text-gray-400">2</span>. Activation</h4>
+            <h4 class="h4 mb-2">2. Activation</h4>
             <p class="text-lg text-gray-400 text-center">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
@@ -96,7 +96,7 @@
                 stroke-linecap="square"
               />
             </svg>
-            <h4 class="h4 mb-2"><span class="text-gray-400">3</span>. Retention</h4>
+            <h4 class="h4 mb-2">3. Retention</h4>
             <p class="text-lg text-gray-400 text-center">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
