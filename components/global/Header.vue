@@ -115,6 +115,15 @@
               >
             </li>
           </ul>
+
+          <!-- Desktop sign in links -->
+          <ul class="flex flex-grow justify-end flex-wrap items-center">
+            <li>
+              <nuxt-link to="/signup" class="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
+                >Sign up</nuxt-link
+              >
+            </li>
+          </ul>
         </nav>
         <!-- Mobile menu -->
         <div class="md:hidden">
@@ -177,6 +186,30 @@
               </li>
               <li>
                 <nuxt-link to="/contact-us" class="flex text-gray-300 hover:text-gray-200 py-2">Contact</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link
+                  to="/signup"
+                  class="
+                    font-medium
+                    w-full
+                    inline-flex
+                    items-center
+                    justify-center
+                    border border-transparent
+                    px-4
+                    py-2
+                    my-2
+                    rounded-sm
+                    text-white
+                    bg-purple-600
+                    hover:bg-purple-700
+                    transition
+                    duration-150
+                    ease-in-out
+                  "
+                  >Sign up</nuxt-link
+                >
               </li>
             </ul>
           </nav>
