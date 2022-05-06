@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative overflow-hidden">
       <!-- Illustration behind hero content -->
       <div
         class="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
