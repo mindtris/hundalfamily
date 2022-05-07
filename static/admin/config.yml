@@ -50,7 +50,7 @@ collections:
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Author', name: 'author', widget: 'string', default: '{{ user.name }}' }
+      - { label: 'Author', name: 'author', widget: 'string', default: '{{ author-name }}' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Image', name: 'blogimage', widget: image }
   - name: 'home'
