@@ -16,7 +16,7 @@
           <article
             class="max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center"
           >
-            <router-link to="/blog-post" class="relative block group" data-aos="fade-right" data-aos-delay="200">
+            <nuxt-link to="/blog-post" class="relative block group" data-aos="fade-right" data-aos-delay="200">
               <div
                 class="
                   absolute
@@ -52,7 +52,7 @@
               >
                 <img src="../../assets/images/blog-post-01.jpg" width="540" height="303" alt="Blog post 01" />
               </figure>
-            </router-link>
+            </nuxt-link>
             <div data-aos="fade-left" data-aos-delay="200">
               <header>
                 <div class="mb-3">
@@ -96,8 +96,8 @@
                   </ul>
                 </div>
                 <h3 class="h3 text-2xl lg:text-3xl mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >Designing a functional workflow at home.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >Designing a functional workflow at home.</nuxt-link
                   >
                 </h3>
               </header>
@@ -132,13 +132,13 @@
           <!-- Articles container -->
           <div class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start">
             <!-- 1st article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <article v-for="(post, index) in posts" :key="index" class="flex flex-col h-full" data-aos="fade-up">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-01.jpg" width="352" height="198" alt="News 01" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -180,8 +180,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -210,13 +210,13 @@
             </article>
 
             <!-- 2nd article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-02.jpg" width="352" height="198" alt="News 02" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -258,8 +258,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -285,16 +285,16 @@
                   <span class="text-gray-500">Jan 12, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 3rd article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-03.jpg" width="352" height="198" alt="News 03" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -336,8 +336,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -363,16 +363,16 @@
                   <span class="text-gray-500">Jan 9, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 4th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-04.jpg" width="352" height="198" alt="News 04" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -414,8 +414,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -441,16 +441,16 @@
                   <span class="text-gray-500">Jan 7, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 5th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-05.jpg" width="352" height="198" alt="News 05" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -474,8 +474,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -501,16 +501,16 @@
                   <span class="text-gray-500">Jan 4, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 6th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-06.jpg" width="352" height="198" alt="News 06" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -552,8 +552,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -579,16 +579,16 @@
                   <span class="text-gray-500">Jan 2, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 7th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-07.jpg" width="352" height="198" alt="News 07" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -630,8 +630,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -657,16 +657,16 @@
                   <span class="text-gray-500">Dec 24, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 8th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-08.jpg" width="352" height="198" alt="News 08" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -708,8 +708,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -735,16 +735,16 @@
                   <span class="text-gray-500">Dec 12, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 9th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img src="../../assets/images/news-09.jpg" width="352" height="198" alt="News 09" />
                   </figure>
-                </router-link>
+                </nuxt-link>
                 <div class="mb-3">
                   <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
@@ -768,8 +768,8 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
-                    >The quick brown fox jumped over the lazy dog.</router-link
+                  <nuxt-link to="/blog-post" class="hover:text-gray-400 transition duration-150 ease-in-out"
+                    >The quick brown fox jumped over the lazy dog.</nuxt-link
                   >
                 </h3>
               </header>
@@ -795,7 +795,7 @@
                   <span class="text-gray-500">Dec 7, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
           </div>
         </div>
 
