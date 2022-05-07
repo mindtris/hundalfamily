@@ -1,12 +1,10 @@
 <template>
-  <main>
-    <section class="w-full max-w-5xl mx-auto">
-      <PageIllustration />
-      <home />
-      <process />
-      <blog-list />
-    </section>
-  </main>
+  <section class="w-full max-w-5xl mx-auto">
+    <PageIllustration />
+    <home />
+    <process />
+    <blog-list />
+  </section>
 </template>
 
 <script>
