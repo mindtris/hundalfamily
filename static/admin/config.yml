@@ -50,16 +50,7 @@ collections:
     fields:
       - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - {
-          label: 'Author',
-          name: 'author',
-          widget: 'relation',
-          default: '{{user.name}}',
-          # collection: 'authors',
-          # value_field: 'email',
-          # display_fields: ['name'],
-          # search_fields: ['name', 'email'],
-        }
+      - { label: 'Author', name: 'author', widget: 'relation', default: { { user.name } } }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Image', name: 'blogimage', widget: image }
   - name: 'home'
