@@ -1,6 +1,6 @@
 ---
 createdAt: 2021-03-01
-title: Landing template for startup
+title: Landing template for startups
 description: Our landing page template works on all devices, so you only have to
   set it up once, and get beautiful results forever.
 ---
