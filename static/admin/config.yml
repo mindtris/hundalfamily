@@ -54,10 +54,11 @@ collections:
           label: 'Author',
           name: 'author',
           widget: 'relation',
-          collection: 'authors',
-          value_field: 'email',
-          display_fields: ['name'],
-          search_fields: ['name', 'email'],
+          default: '{{user.name}}',
+          # collection: 'authors',
+          # value_field: 'email',
+          # display_fields: ['name'],
+          # search_fields: ['name', 'email'],
         }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Image', name: 'blogimage', widget: image }
