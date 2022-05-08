@@ -51,7 +51,7 @@
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
           <h1 class="h1 mb-4" data-aos="fade-up">
-            Landing template for startup
+            Landing template for startups
           </h1>
           <p
             class="text-xl text-gray-400 mb-8"
