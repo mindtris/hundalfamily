@@ -160,7 +160,7 @@
                   <a
                     class="
                       font-medium
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -285,7 +285,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -401,7 +401,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -517,7 +517,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -629,7 +629,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -727,7 +727,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -843,7 +843,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -955,7 +955,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -1071,7 +1071,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150
@@ -1169,7 +1169,7 @@
                 <div class="font-medium">
                   <a
                     class="
-                      text-gray-200
+                      text-gray-400
                       hover:text-gray-100
                       transition
                       duration-150

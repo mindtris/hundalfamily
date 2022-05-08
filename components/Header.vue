@@ -183,35 +183,35 @@
               <li>
                 <nuxt-link
                   to="/features"
-                  class="flex text-state-900 hover:text-state-700 py-2"
+                  class="flex text-white hover:text-white py-2"
                   >Features</nuxt-link
                 >
               </li>
               <li>
                 <nuxt-link
                   to="/pricing"
-                  class="flex text-state-900 hover:text-state-700 py-2"
+                  class="flex text-white hover:text-white py-2"
                   >Pricing</nuxt-link
                 >
               </li>
               <li>
                 <nuxt-link
                   to="/blog"
-                  class="flex text-state-900 hover:text-state-700 py-2"
+                  class="flex text-white hover:text-white py-2"
                   >Blog</nuxt-link
                 >
               </li>
               <li>
                 <nuxt-link
                   to="/about"
-                  class="flex text-state-900 hover:text-state-700 py-2"
+                  class="flex text-white hover:text-white py-2"
                   >About us</nuxt-link
                 >
               </li>
               <li>
                 <nuxt-link
                   to="/contact"
-                  class="flex text-state-900 hover:text-state-700 py-2"
+                  class="flex text-white hover:text-white py-2"
                   >Contact us</nuxt-link
                 >
               </li>
