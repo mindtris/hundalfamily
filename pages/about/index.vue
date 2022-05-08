@@ -15,7 +15,7 @@
 
       <!-- Page sections -->
       <HeroAbout />
-      <TeamImages />
+      <!-- <TeamImages /> -->
       <Timeline />
       <Team />
       <TestimonialsCarousel />
