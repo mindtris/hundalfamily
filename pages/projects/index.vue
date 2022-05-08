@@ -14,7 +14,7 @@
       </div>
 
       <!-- Page sections -->
-      <BlogList showFeaturedArticle="true" />
+      <BlogList showFeaturedArticle="{true}" />
     </main>
 
     <!-- Site footer -->

@@ -196,7 +196,7 @@
                         duration-700
                         ease-out
                       "
-                      src="../assets/images/news-01.jpg"
+                      src="../static/images/news-01.jpg"
                       width="352"
                       height="198"
                       alt="News 01"
@@ -306,7 +306,7 @@
                         duration-700
                         ease-out
                       "
-                      src="../assets/images/news-02.jpg"
+                      src="../static/images/news-02.jpg"
                       width="352"
                       height="198"
                       alt="News 02"
@@ -416,7 +416,7 @@
                         duration-700
                         ease-out
                       "
-                      src="../assets/images/news-03.jpg"
+                      src="../static/images/news-03.jpg"
                       width="352"
                       height="198"
                       alt="News 03"
@@ -522,7 +522,7 @@
                         duration-700
                         ease-out
                       "
-                      src="../assets/images/news-04.jpg"
+                      src="../static/images/news-04.jpg"
                       width="352"
                       height="198"
                       alt="News 04"
