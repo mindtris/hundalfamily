@@ -367,7 +367,7 @@ export default {
   methods: {
     async fetchPosts() {
       return this.$content("blog")
-        .sortBy("createdAt")
+        .sortBy("createdAt", "desc")
         .limit(3)
         .fetch()
         .catch((err) => console.error(err) || []);
