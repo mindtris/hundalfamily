@@ -15,7 +15,12 @@
             class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start"
           >
             <!-- 1st article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <article
+              v-for="(post, index) in posts"
+              :key="index"
+              class="flex flex-col h-full"
+              data-aos="fade-up"
+            >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
@@ -84,13 +89,12 @@
                       duration-150
                       ease-in-out
                     "
-                    >The quick brown fox jumped over the lazy dog.</nuxt-link
+                    >{{ post.title }}</nuxt-link
                   >
                 </h3>
               </header>
               <p class="text-lg text-gray-400 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {{ post.description }}
               </p>
               <footer class="flex items-center mt-4">
                 <a href="#0">
@@ -112,16 +116,18 @@
                       ease-in-out
                     "
                     href="#0"
-                    >Anastasia Dan</a
+                    >{{ post.author }}</a
                   >
                   <span class="text-gray-700"> - </span>
-                  <span class="text-gray-500">Jan 17, 2020</span>
+                  <span class="text-gray-500">{{
+                    post.createdAt | formatDate
+                  }}</span>
                 </div>
               </footer>
             </article>
 
             <!-- 2nd article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -228,10 +234,10 @@
                   <span class="text-gray-500">Jan 12, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 3rd article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="400"
@@ -338,7 +344,7 @@
                   <span class="text-gray-500">Jan 9, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
           </div>
         </div>
       </div>
@@ -349,5 +355,23 @@
 <script>
 export default {
   name: "News",
+  data() {
+    return {
+      posts: [],
+    };
+  },
+  async mounted() {
+    this.posts = await this.fetchPosts();
+    console.log("Posts", this.posts);
+  },
+  methods: {
+    async fetchPosts() {
+      return this.$content("blog")
+        .sortBy("createdAt")
+        .limit(3)
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+  },
 };
 </script>
