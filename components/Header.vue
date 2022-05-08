@@ -13,15 +13,15 @@
           </nuxt-link>
         </div>
 
-        <!-- Desktop navigation -->
+        <!-- Desktop navigation  -->
         <nav class="hidden md:flex md:flex-grow">
           <!-- Desktop menu links -->
           <ul class="flex flex-grow justify-end flex-wrap items-center">
             <li>
               <nuxt-link
                 to="/features"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
                 class="
-                  text-state-900
                   hover:text-state-700
                   px-4
                   py-2
@@ -37,8 +37,8 @@
             <li>
               <nuxt-link
                 to="/pricing"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
                 class="
-                  text-state-900
                   hover:text-state-700
                   px-4
                   py-2
@@ -54,8 +54,8 @@
             <li>
               <nuxt-link
                 to="/blog"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
                 class="
-                  text-state-900
                   hover:text-state-700
                   px-4
                   py-2
@@ -71,8 +71,8 @@
             <li>
               <nuxt-link
                 to="/about"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
                 class="
-                  text-state-900
                   hover:text-state-700
                   px-4
                   py-2
@@ -88,7 +88,8 @@
             <li>
               <nuxt-link
                 to="/contact"
-                class="flex text-state-900 hover:text-state-700 py-2"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="flex hover:text-state-700 py-2"
                 >Contact us</nuxt-link
               >
             </li>
@@ -266,6 +267,13 @@
 export default {
   name: "Header",
   components: {},
+  props: {
+    showWhiteText: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
   data: function () {
     return {
       mobileNavOpen: false,

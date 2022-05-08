@@ -8,13 +8,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        "architects-daughter": ['"Architects Daughter"', "sans-serif"],
+      },
       colors: {
         amber: {
-          400: '#ffb703',
+          400: "#ffb703",
         },
-      }
+      },
     },
-    
   },
   plugins: [],
-}
+};
