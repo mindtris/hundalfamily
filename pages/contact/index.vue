@@ -34,7 +34,7 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="first-name"
                     >First Name <span class="text-red-600">*</span></label
                   >
@@ -57,7 +57,7 @@
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="last-name"
                     >Last Name <span class="text-red-600">*</span></label
                   >
@@ -73,7 +73,7 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="email"
                     >Email <span class="text-red-600">*</span></label
                   >
@@ -89,7 +89,7 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="subject"
                     >Subject <span class="text-red-600">*</span></label
                   >
@@ -105,11 +105,14 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="country"
                     >Country</label
                   >
-                  <select id="country" class="form-select w-full text-gray-300">
+                  <select
+                    id="country"
+                    class="form-select w-full text-state-700"
+                  >
                     <option>United States</option>
                     <option>United Kingdom</option>
                     <option>Germany</option>
@@ -119,7 +122,7 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label
-                    class="block text-gray-300 text-sm font-medium mb-1"
+                    class="block text-state-700 text-sm font-medium mb-1"
                     for="message"
                     >Message</label
                   >
@@ -135,7 +138,7 @@
                 <div class="w-full px-3">
                   <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" />
-                    <span class="text-gray-400 ml-2"
+                    <span class="text-state-700 ml-2"
                       >I agree to the privacy policy</span
                     >
                   </label>
