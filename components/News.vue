@@ -33,7 +33,7 @@
                         duration-700
                         ease-out
                       "
-                      :src="'dist/_nuxt' + post.blogimage"
+                      :src="'/_nuxt' + post.blogimage"
                       width="352"
                       height="198"
                       alt="News 01"
