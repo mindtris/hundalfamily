@@ -363,7 +363,6 @@ export default {
   },
   async mounted() {
     this.posts = await this.fetchPosts();
-    console.log("Posts", this.posts);
   },
   methods: {
     async fetchPosts() {

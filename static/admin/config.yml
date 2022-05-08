@@ -78,6 +78,7 @@ collections:
           required: false,
         }
       - { label: "Image", name: "blogimage", widget: image }
+      - { label: "Tags", name: "tags", widget: "list", max: 3 }
   - name: "home"
     label: "Home"
     folder: "content/home"

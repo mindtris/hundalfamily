@@ -183,12 +183,18 @@
             class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start"
           >
             <!-- 1st article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <article
+              v-for="(post, index) in posts"
+              :key="index"
+              class="flex flex-col h-full"
+              data-aos="fade-up"
+            >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
+                        h-48
                         object-cover
                         transform
                         hover:scale-105
@@ -196,7 +202,7 @@
                         duration-700
                         ease-out
                       "
-                      src="../static/images/news-01.jpg"
+                      :src="post.blogimage"
                       width="352"
                       height="198"
                       alt="News 01"
@@ -252,13 +258,12 @@
                       duration-150
                       ease-in-out
                     "
-                    >The quick brown fox jumped over the lazy dog.</nuxt-link
+                    >{{ post.title }}</nuxt-link
                   >
                 </h3>
               </header>
               <p class="text-lg text-gray-400 flex-grow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {{ post.description }}
               </p>
               <footer class="flex items-center mt-4">
                 <a href="#0">
@@ -280,16 +285,18 @@
                       ease-in-out
                     "
                     href="#0"
-                    >Anastasia Dan</a
+                    >{{ post.author }}</a
                   >
                   <span class="text-gray-700"> - </span>
-                  <span class="text-gray-500">Jan 17, 2020</span>
+                  <span class="text-gray-500">{{
+                    post.createdAt | formatDate
+                  }}</span>
                 </div>
               </footer>
             </article>
 
             <!-- 2nd article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -396,10 +403,10 @@
                   <span class="text-gray-500">Jan 12, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 3rd article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -506,10 +513,10 @@
                   <span class="text-gray-500">Jan 9, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 4th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
@@ -612,10 +619,10 @@
                   <span class="text-gray-500">Jan 7, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 5th article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -704,10 +711,10 @@
                   <span class="text-gray-500">Jan 4, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 6th article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -814,10 +821,10 @@
                   <span class="text-gray-500">Jan 2, 2020</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 7th article -->
-            <article class="flex flex-col h-full" data-aos="fade-up">
+            <!-- <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
                   <figure class="relative pb-9/16 rounded-sm">
@@ -920,10 +927,10 @@
                   <span class="text-gray-500">Dec 24, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 8th article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -1030,10 +1037,10 @@
                   <span class="text-gray-500">Dec 12, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
 
             <!-- 9th article -->
-            <article
+            <!-- <article
               class="flex flex-col h-full"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -1122,7 +1129,7 @@
                   <span class="text-gray-500">Dec 7, 2019</span>
                 </div>
               </footer>
-            </article>
+            </article> -->
           </div>
         </div>
 
@@ -1285,6 +1292,23 @@ export default {
       type: Boolean,
       required: false,
       default: false,
+    },
+  },
+  data() {
+    return {
+      posts: [],
+    };
+  },
+  async mounted() {
+    this.posts = await this.fetchPosts();
+  },
+  methods: {
+    async fetchPosts() {
+      return this.$content("blog")
+        .sortBy("createdAt", "desc")
+        .limit(9)
+        .fetch()
+        .catch((err) => console.error(err) || []);
     },
   },
 };
