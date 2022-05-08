@@ -1155,7 +1155,7 @@
                 class="
                   inline-flex
                   h-10
-                  min-w-10
+                  w-10
                   justify-center
                   items-center
                   bg-gray-800
@@ -1176,7 +1176,7 @@
                 class="
                   inline-flex
                   h-10
-                  min-w-10
+                  w-10
                   justify-center
                   items-center
                   bg-gray-800
@@ -1197,7 +1197,7 @@
                 class="
                   inline-flex
                   h-10
-                  min-w-10
+                  w-10
                   justify-center
                   items-center
                   bg-gray-800
@@ -1217,7 +1217,7 @@
                 class="
                   inline-flex
                   h-10
-                  min-w-10
+                  w-10
                   justify-center
                   items-center
                   bg-gray-800
@@ -1234,7 +1234,7 @@
                 class="
                   inline-flex
                   h-10
-                  min-w-10
+                  w-10
                   justify-center
                   items-center
                   bg-gray-800
