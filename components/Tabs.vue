@@ -251,7 +251,9 @@
                       lg:max-w-xl
                     "
                   >
-                    <h4 class="h4 mb-2">Optimize and scale, easy to start</h4>
+                    <h4 class="h4 text-white mb-2">
+                      Optimize and scale, easy to start
+                    </h4>
                     <p class="text-lg text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna

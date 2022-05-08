@@ -68,7 +68,9 @@
                     class="text-2xl md:text-3xl font-medium text-gray-400"
                     >{{ priceOutput.plan1[value][0] }}</span
                   >
-                  <span class="h2">{{ priceOutput.plan1[value][1] }}</span>
+                  <span class="h2 text-gray-400">{{
+                    priceOutput.plan1[value][1]
+                  }}</span>
                   <span class="font-medium text-gray-400">{{
                     priceOutput.plan1[value][2]
                   }}</span>
@@ -78,7 +80,9 @@
                   customers.
                 </div>
               </div>
-              <div class="font-medium mb-3">Features include:</div>
+              <div class="font-medium mb-3 text-gray-400">
+                Features include:
+              </div>
               <ul class="text-gray-400 -mb-3 flex-grow">
                 <li class="flex items-center mb-3">
                   <svg
@@ -202,7 +206,9 @@
                     class="text-2xl md:text-3xl font-medium text-gray-400"
                     >{{ priceOutput.plan2[value][0] }}</span
                   >
-                  <span class="h2">{{ priceOutput.plan2[value][1] }}</span>
+                  <span class="h2 text-gray-400">{{
+                    priceOutput.plan2[value][1]
+                  }}</span>
                   <span class="font-medium text-gray-400">{{
                     priceOutput.plan2[value][2]
                   }}</span>
@@ -212,7 +218,7 @@
                   customers.
                 </div>
               </div>
-              <div class="font-medium mb-3">
+              <div class="font-medium mb-3 text-gray-400">
                 All features of Essential plus:
               </div>
               <ul class="text-gray-400 -mb-3 flex-grow">
@@ -340,7 +346,9 @@
                     class="text-2xl md:text-3xl font-medium text-gray-400"
                     >{{ priceOutput.plan3[value][0] }}</span
                   >
-                  <span class="h2">{{ priceOutput.plan3[value][1] }}</span>
+                  <span class="h2 text-gray-400">{{
+                    priceOutput.plan3[value][1]
+                  }}</span>
                   <span class="font-medium text-gray-400">{{
                     priceOutput.plan3[value][2]
                   }}</span>
@@ -350,7 +358,7 @@
                   customers.
                 </div>
               </div>
-              <div class="font-medium mb-3">
+              <div class="font-medium mb-3 text-gray-400">
                 All features of Essential plus:
               </div>
               <ul class="text-gray-400 -mb-3 flex-grow">

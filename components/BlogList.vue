@@ -52,11 +52,9 @@
               <figure
                 class="
                   relative
-                  h-0
                   pb-9/16
                   md:pb-3/4
                   lg:pb-9/16
-                  overflow-hidden
                   transform
                   md:-translate-y-2
                   xl:-translate-y-4
@@ -68,10 +66,6 @@
               >
                 <img
                   class="
-                    absolute
-                    inset-0
-                    w-full
-                    h-full
                     object-cover
                     transform
                     hover:scale-105
@@ -132,7 +126,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -161,7 +155,7 @@
                     class="
                       font-medium
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -192,15 +186,9 @@
             <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -259,7 +247,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -286,7 +274,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -308,15 +296,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -375,7 +357,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -402,7 +384,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -424,15 +406,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -491,7 +467,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -518,7 +494,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -536,15 +512,9 @@
             <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -603,7 +573,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -630,7 +600,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -652,15 +622,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -701,7 +665,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -728,7 +692,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -750,15 +714,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -817,7 +775,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -844,7 +802,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -862,15 +820,9 @@
             <article class="flex flex-col h-full" data-aos="fade-up">
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -929,7 +881,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -956,7 +908,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -978,15 +930,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -1045,7 +991,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -1072,7 +1018,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -1094,15 +1040,9 @@
             >
               <header>
                 <nuxt-link to="/blog-post" class="block mb-6">
-                  <figure
-                    class="relative h-0 pb-9/16 overflow-hidden rounded-sm"
-                  >
+                  <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
-                        absolute
-                        inset-0
-                        w-full
-                        h-full
                         object-cover
                         transform
                         hover:scale-105
@@ -1143,7 +1083,7 @@
                   <nuxt-link
                     to="/blog-post"
                     class="
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
@@ -1170,7 +1110,7 @@
                   <a
                     class="
                       text-gray-400
-                      hover:text-gray-100
+                      hover:text-gray-400
                       transition
                       duration-150
                       ease-in-out
