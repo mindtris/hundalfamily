@@ -26,6 +26,7 @@
                   <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
+                        h-48
                         object-cover
                         transform
                         hover:scale-105

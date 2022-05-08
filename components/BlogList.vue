@@ -1284,6 +1284,7 @@ export default {
     showFeaturedArticle: {
       type: Boolean,
       required: false,
+      default: false,
     },
   },
 };
