@@ -17,7 +17,7 @@
         <nav class="hidden md:flex md:flex-grow">
           <!-- Desktop menu links -->
           <ul class="flex flex-grow justify-end flex-wrap items-center">
-            <li>
+            <!-- <li>
               <nuxt-link
                 to="/features"
                 v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
@@ -33,8 +33,25 @@
                 "
                 >Features</nuxt-link
               >
-            </li>
+            </li> -->
             <li>
+              <nuxt-link
+                to="/features"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="
+                  hover:text-state-700
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >Home</nuxt-link
+              >
+            </li>
+            <!-- <li>
               <nuxt-link
                 to="/pricing"
                 v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
@@ -50,8 +67,25 @@
                 "
                 >Pricing</nuxt-link
               >
-            </li>
+            </li> -->
             <li>
+              <nuxt-link
+                to="/projects"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="
+                  hover:text-state-700
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >Projects</nuxt-link
+              >
+            </li>
+            <!-- <li>
               <nuxt-link
                 to="/blog"
                 v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
@@ -66,6 +100,23 @@
                   ease-in-out
                 "
                 >Blog</nuxt-link
+              >
+            </li> -->
+            <li>
+              <nuxt-link
+                to="/stories"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="
+                  hover:text-state-700
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >Stories</nuxt-link
               >
             </li>
             <li>
@@ -181,25 +232,46 @@
             ]"
           >
             <ul class="bg-gray-800 px-4 py-2">
-              <li>
+              <!-- <li>
                 <nuxt-link
                   to="/features"
                   class="flex text-white hover:text-white py-2"
                   >Features</nuxt-link
                 >
-              </li>
+              </li> -->
               <li>
+                <nuxt-link
+                  to="/features"
+                  class="flex text-white hover:text-white py-2"
+                  >Home</nuxt-link
+                >
+              </li>
+              <!-- <li>
                 <nuxt-link
                   to="/pricing"
                   class="flex text-white hover:text-white py-2"
                   >Pricing</nuxt-link
                 >
-              </li>
+              </li> -->
               <li>
+                <nuxt-link
+                  to="/projects"
+                  class="flex text-white hover:text-white py-2"
+                  >Projects</nuxt-link
+                >
+              </li>
+              <!-- <li>
                 <nuxt-link
                   to="/blog"
                   class="flex text-white hover:text-white py-2"
                   >Blog</nuxt-link
+                >
+              </li> -->
+              <li>
+                <nuxt-link
+                  to="/stories"
+                  class="flex text-white hover:text-white py-2"
+                  >Stories</nuxt-link
                 >
               </li>
               <li>

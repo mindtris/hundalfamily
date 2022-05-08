@@ -10,7 +10,7 @@
         </div>
 
         <!-- Featured article -->
-        <div class="pb-12 md:pb-20">
+        <div v-if="showFeaturedArticle" class="pb-12 md:pb-20">
           <article
             class="
               max-w-sm
@@ -1280,5 +1280,11 @@
 <script>
 export default {
   name: "BlogList",
+  props: {
+    showFeaturedArticle: {
+      type: Boolean,
+      required: false,
+    },
+  },
 };
 </script>
