@@ -325,7 +325,9 @@
                       md:ml-auto
                     "
                   >
-                    <h4 class="h4 mb-2">Easy to start, optimize and scale</h4>
+                    <h4 class="h4 mb-2 text-white">
+                      Easy to start, optimize and scale
+                    </h4>
                     <p class="text-lg text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -396,7 +398,9 @@
                       lg:max-w-xl
                     "
                   >
-                    <h4 class="h4 mb-2">Optimize and scale, easy to start</h4>
+                    <h4 class="h4 mb-2 text-white">
+                      Optimize and scale, easy to start
+                    </h4>
                     <p class="text-lg text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -468,7 +472,9 @@
                       md:ml-auto
                     "
                   >
-                    <h4 class="h4 mb-2">Easy to start, optimize and scale</h4>
+                    <h4 class="h4 mb-2 text-white">
+                      Easy to start, optimize and scale
+                    </h4>
                     <p class="text-lg text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -539,7 +545,9 @@
                       lg:max-w-xl
                     "
                   >
-                    <h4 class="h4 mb-2">Optimize and scale, easy to start</h4>
+                    <h4 class="h4 mb-2 text-white">
+                      Optimize and scale, easy to start
+                    </h4>
                     <p class="text-lg text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
