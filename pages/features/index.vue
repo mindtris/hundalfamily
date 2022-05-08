@@ -13,13 +13,12 @@
       </div>
 
       <!-- Page sections -->
-      <HeroHome />
-      <Process />
-      <FeaturesHome />
-      <Tabs />
-      <Target />
-      <News />
-      <Newsletter />
+      <HeroFeatures />
+      <Stats />
+      <FeaturesZigzag />
+      <FeaturesBlocks />
+      <CaseStudies />
+      <Cta />
 
     </main>
 
@@ -30,8 +29,7 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
+  name: 'Features',
 };
 </script>

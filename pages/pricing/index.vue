@@ -13,13 +13,10 @@
       </div>
 
       <!-- Page sections -->
-      <HeroHome />
-      <Process />
-      <FeaturesHome />
-      <Tabs />
-      <Target />
-      <News />
-      <Newsletter />
+      <PricingTables />
+      <Faqs />
+      <Testimonials />
+      <Cta />
 
     </main>
 
@@ -32,6 +29,6 @@
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Pricing',
 };
 </script>
