@@ -130,7 +130,7 @@ collections:
       - {
           label: "Description",
           name: "description",
-          widget: "text",
+          widget: "markdown",
           required: false,
         }
   - name: "projects"
