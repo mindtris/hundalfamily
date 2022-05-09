@@ -82,9 +82,7 @@ collections:
         label: "Tags"
         widget: "list"
         fields:
-          - { name: "one", label: "One", widget: "string" }
-          - { name: "two", label: "Two", widget: "string", required: true }
-          - { name: "three", label: "Three", widget: "string", default: "foo" }
+          - { widget: "string" }
 
   - name: "home"
     label: "Home"
