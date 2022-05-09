@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="py-12 md:py-20 border-t border-gray-800">
+      <div class="py-12 md:py-20 border-gray-800">
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 class="h2" data-aos="fade-up">
@@ -61,7 +61,7 @@
                         >Product</a
                       >
                     </li>
-                    <li class="m-1">
+                    <!-- <li class="m-1">
                       <a
                         class="
                           inline-flex
@@ -78,7 +78,7 @@
                         href="#0"
                         >Engineering</a
                       >
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">

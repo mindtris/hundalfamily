@@ -6,22 +6,22 @@
     <!-- Page content -->
     <main class="flex-grow">
       <!-- Page illustration -->
-      <div
+      <!-- <div
         class="relative max-w-6xl mx-auto h-0 pointer-events-none"
         aria-hidden="true"
       >
         <PageIllustration />
-      </div>
+      </div> -->
 
       <!-- Page sections -->
       <HeroAbout />
       <!-- <TeamImages /> -->
       <Timeline />
-      <Team />
+      <!-- <Team />
       <TestimonialsCarousel />
       <Career />
       <Clients />
-      <Newsletter />
+      <Newsletter /> -->
     </main>
 
     <!-- Site footer -->

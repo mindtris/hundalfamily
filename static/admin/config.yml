@@ -120,6 +120,19 @@ collections:
       - { label: Email, name: email, widget: string }
       - { label: Shortbio, name: shortbio, widget: text }
       - { label: Image, name: authorimage, widget: image }
+  - name: history
+    label: History
+    folder: content/history/
+    format: "frontmatter"
+    slug: "{{name}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
   - name: "projects"
     label: "Projects"
     label_singular: "Project"

@@ -74,7 +74,7 @@
                   sm:w-auto sm:mb-0
                 "
                 href="#0"
-                >Start free trial</a
+                >Open family members</a
               >
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
@@ -82,13 +82,13 @@
                 class="
                   btn
                   text-white
-                  bg-gray-700
+                  bg-blue-400
                   hover:bg-gray-800
                   w-full
                   sm:w-auto sm:ml-4
                 "
                 href="#0"
-                >Learn more</a
+                >Open family stories</a
               >
             </div>
           </div>

@@ -16,11 +16,13 @@
       <!-- Page sections -->
       <HeroHome />
       <Process />
-      <FeaturesHome />
+      <Team />
+      <!-- <FeaturesHome />
       <Tabs />
-      <Target />
+      <Target /> -->
       <News />
-      <Newsletter />
+      <CtaContact />
+      <!-- <Newsletter /> -->
     </main>
 
     <!-- Site footer -->

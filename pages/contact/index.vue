@@ -18,14 +18,16 @@
           <div class="pt-32 pb-12 md:pt-40 md:pb-20">
             <!-- Page header -->
             <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-              <h1 class="h1 mb-4" data-aos="fade-up">How can we help you?</h1>
+              <h1 class="h1 mb-4" data-aos="fade-up">
+                How can we connect you?
+              </h1>
               <p
                 class="text-xl text-gray-400"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                We have custom plans to power your business. Tell us your needs,
-                and we’ll contact you shortly.
+                Drop us a line here so we can reconnect where you are, and we’ll
+                contact you shortly.
               </p>
             </div>
 
@@ -97,7 +99,7 @@
                     id="subject"
                     type="text"
                     class="form-input w-full text-gray-300"
-                    placeholder="How can we help you?"
+                    placeholder="How can we connect you?"
                     required
                   />
                 </div>
@@ -113,9 +115,12 @@
                     id="country"
                     class="form-select w-full text-state-700"
                   >
-                    <option>United States</option>
-                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                    <option>Canada</option>
                     <option>Germany</option>
+                    <option>India</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
                   </select>
                 </div>
               </div>

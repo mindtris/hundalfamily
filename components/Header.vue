@@ -51,6 +51,108 @@
                 >Home</nuxt-link
               >
             </li>
+            <li>
+              <nuxt-link
+                to="/about"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="
+                  hover:text-state-700
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >History</nuxt-link
+              >
+            </li>
+            <!-- <li>
+              <nuxt-link
+                to="/stories"
+                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
+                class="
+                  hover:text-state-700
+                  px-4
+                  py-2
+                  flex
+                  items-center
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                >Family</nuxt-link
+              >
+            </li> -->
+            <Dropdown :showWhiteText="showWhiteText" title="Family">
+              <li>
+                <nuxt-link
+                  to="/contact"
+                  class="
+                    font-medium
+                    text-sm text-gray-400
+                    hover:text-purple-600
+                    flex
+                    py-2
+                    px-4
+                    leading-tight
+                  "
+                  >Family Members</nuxt-link
+                >
+              </li>
+              <li>
+                <nuxt-link
+                  to="/help"
+                  class="
+                    font-medium
+                    text-sm text-gray-400
+                    hover:text-purple-600
+                    flex
+                    py-2
+                    px-4
+                    leading-tight
+                  "
+                  >Family Tree</nuxt-link
+                >
+              </li>
+            </Dropdown>
+            <!-- <li class="py-2 my-2 border-t border-b border-gray-700">
+              <span class="flex text-gray-300 py-2">Family</span>
+              <ul class="pl-4">
+                <li>
+                  <nuxt-link
+                    to="/stories"
+                    v-bind:class="
+                      showWhiteText ? 'text-white' : 'text-state-900'
+                    "
+                    class="
+                      text-sm
+                      flex
+                      font-medium
+                      text-gray-400
+                      hover:text-gray-200
+                      py-2
+                    "
+                    >Family Member</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link
+                    to="/help"
+                    class="
+                      text-sm
+                      flex
+                      font-medium
+                      text-gray-400
+                      hover:text-gray-200
+                      py-2
+                    "
+                    >Family Tree</nuxt-link
+                  >
+                </li>
+              </ul>
+            </li> -->
             <!-- <li>
               <nuxt-link
                 to="/pricing"
@@ -82,7 +184,7 @@
                   duration-150
                   ease-in-out
                 "
-                >Projects</nuxt-link
+                >Blog</nuxt-link
               >
             </li>
             <!-- <li>
@@ -102,40 +204,6 @@
                 >Blog</nuxt-link
               >
             </li> -->
-            <li>
-              <nuxt-link
-                to="/stories"
-                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
-                class="
-                  hover:text-state-700
-                  px-4
-                  py-2
-                  flex
-                  items-center
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                >Stories</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link
-                to="/about"
-                v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
-                class="
-                  hover:text-state-700
-                  px-4
-                  py-2
-                  flex
-                  items-center
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                >About us</nuxt-link
-              >
-            </li>
             <li>
               <nuxt-link
                 to="/contact"
@@ -246,6 +314,53 @@
                   >Home</nuxt-link
                 >
               </li>
+              <li>
+                <nuxt-link
+                  to="/about"
+                  class="flex text-white hover:text-white py-2"
+                  >History</nuxt-link
+                >
+              </li>
+              <!-- <li>
+                <nuxt-link
+                  to="/stories"
+                  class="flex text-white hover:text-white py-2"
+                  >Family</nuxt-link
+                >
+              </li> -->
+              <li class="py-2 my-2 border-t border-b border-gray-700">
+                <span class="flex text-gray-300 py-2">Family</span>
+                <ul class="pl-4">
+                  <li>
+                    <router-link
+                      to="/contact"
+                      class="
+                        text-sm
+                        flex
+                        font-medium
+                        text-gray-400
+                        hover:text-gray-200
+                        py-2
+                      "
+                      >Family Members</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link
+                      to="/help"
+                      class="
+                        text-sm
+                        flex
+                        font-medium
+                        text-gray-400
+                        hover:text-gray-200
+                        py-2
+                      "
+                      >Family Tree</router-link
+                    >
+                  </li>
+                </ul>
+              </li>
               <!-- <li>
                 <nuxt-link
                   to="/pricing"
@@ -257,7 +372,7 @@
                 <nuxt-link
                   to="/projects"
                   class="flex text-white hover:text-white py-2"
-                  >Projects</nuxt-link
+                  >Blog</nuxt-link
                 >
               </li>
               <!-- <li>
@@ -267,20 +382,6 @@
                   >Blog</nuxt-link
                 >
               </li> -->
-              <li>
-                <nuxt-link
-                  to="/stories"
-                  class="flex text-white hover:text-white py-2"
-                  >Stories</nuxt-link
-                >
-              </li>
-              <li>
-                <nuxt-link
-                  to="/about"
-                  class="flex text-white hover:text-white py-2"
-                  >About us</nuxt-link
-                >
-              </li>
               <li>
                 <nuxt-link
                   to="/contact"

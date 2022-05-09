@@ -2,7 +2,7 @@
   <section>
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <!-- CTA box -->
-      <div class="bg-gray-800 py-10 px-8 md:py-16 md:px-12">
+      <div class="bg-blue-400 py-10 px-8 md:py-16 md:px-12">
         <div class="flex flex-col lg:flex-row justify-between items-center">
           <!-- CTA content -->
           <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-3/4">
