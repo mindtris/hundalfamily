@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- Site header -->
-    <Header showWhiteText="true" />
+    <Header :showWhiteText="true" />
 
     <!-- Page content -->
     <main class="flex-grow">

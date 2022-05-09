@@ -5,9 +5,10 @@
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 class="h2 mb-4">{{ history.title }}</h2>
-          <p class="text-xl text-gray">
+          <nuxt-content :document="history" />
+          <!-- <p class="text-xl text-gray">
             {{ history.description }}
-          </p>
+          </p> -->
         </div>
 
         <!-- Items -->
@@ -82,7 +83,6 @@ export default {
   },
   async mounted() {
     this.history = await this.fetchHistory();
-    console.log("History", this.history);
   },
   methods: {
     async fetchHistory() {
