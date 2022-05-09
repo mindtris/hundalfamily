@@ -82,7 +82,7 @@ collections:
         label: "Tags"
         widget: "list"
         fields:
-          - { widget: "string" }
+          - { name: "one", label: "One", widget: "string" }
 
   - name: "home"
     label: "Home"
