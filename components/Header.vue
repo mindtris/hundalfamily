@@ -208,7 +208,7 @@
               <nuxt-link
                 to="/contact"
                 v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
-                class="flex hover:text-state-700 py-2"
+                class="flex hover:text-state-700 px-4 py-2"
                 >Contact us</nuxt-link
               >
             </li>

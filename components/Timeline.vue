@@ -5,7 +5,9 @@
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h2 class="h2 mb-4">{{ history.title }}</h2>
-          <nuxt-content :document="history" />
+          <div class="prose text-center mx-auto">
+            <nuxt-content :document="history" />
+          </div>
           <!-- <p class="text-xl text-gray">
             {{ history.description }}
           </p> -->
