@@ -78,7 +78,14 @@ collections:
           required: false,
         }
       - { label: "Image", name: "blogimage", widget: image }
-      - { label: "Tags", name: "tags", widget: "list", max: 3 }
+      - name: "tags"
+        label: "Tags"
+        widget: "list"
+        fields:
+          - { name: "one", label: "One", widget: "string" }
+          - { name: "two", label: "Two", widget: "string", required: true }
+          - { name: "three", label: "Three", widget: "string", default: "foo" }
+
   - name: "home"
     label: "Home"
     folder: "content/home"
