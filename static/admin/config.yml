@@ -125,8 +125,15 @@ collections:
     folder: content/family-member/
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.createdAt}}-{{slug}}"
     fields:
+      - {
+          label: "Created Date",
+          name: "createdAt",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+        }
       - { label: Name, name: name, widget: string, required: true }
       - {
           label: Birthdate,
