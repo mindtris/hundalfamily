@@ -32,7 +32,12 @@
             </div>
 
             <!-- Contact form -->
-            <form class="max-w-xl mx-auto">
+            <form
+              name="contact-us"
+              method="post"
+              data-netlify="true"
+              class="max-w-xl mx-auto"
+            >
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full md:w-1/2 px-3 mb-4 md:mb-0">
                   <label
@@ -152,6 +157,7 @@
               <div class="flex flex-wrap -mx-3 mt-6">
                 <div class="w-full px-3">
                   <button
+                    type="submit"
                     class="
                       btn
                       text-white
