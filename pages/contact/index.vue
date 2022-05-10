@@ -33,7 +33,7 @@
 
             <!-- Contact form -->
             <form
-              name="contact-us"
+              name="contactUs"
               method="post"
               data-netlify="true"
               class="max-w-xl mx-auto"
@@ -45,6 +45,7 @@
                     for="first-name"
                     >First Name <span class="text-red-600">*</span></label
                   >
+                  <input type="hidden" name="contactUs" value="contact" />
                   <input
                     id="first-name"
                     name="firstName"
