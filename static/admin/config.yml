@@ -120,6 +120,23 @@ collections:
       - { label: Email, name: email, widget: string }
       - { label: Shortbio, name: shortbio, widget: text }
       - { label: Image, name: authorimage, widget: image }
+  - name: member
+    label: Family Member
+    folder: content/family-member/
+    format: "frontmatter"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: Name, name: name, widget: string, required: true }
+      - {
+          label: Birthdate,
+          name: birthdate,
+          widget: date,
+          default: "",
+          format: "MMM Do YY",
+          , required: true
+        }
+      - { label: Image, name: authorimage, widget: image, required: true }
   - name: history
     label: History
     folder: content/history/
