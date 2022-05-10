@@ -134,7 +134,7 @@ collections:
           widget: date,
           default: "",
           format: "MMM Do YY",
-          , required: true
+          required: true,
         }
       - { label: Image, name: authorimage, widget: image, required: true }
   - name: history
