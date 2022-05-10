@@ -81,6 +81,54 @@
     text-align: start
 }
 
+.paginationContainer ul{
+    @apply inline-flex flex-wrap font-medium text-sm -m-1
+}
+
+.pagination li {
+    @apply m-1
+}
+
+.page-item.first a{
+    display: none
+} 
+
+.page-item.first.disabled a{
+    display: none
+} 
+
+.page-item.previous.disabled a {
+    @apply inline-flex h-10 justify-center items-center bg-gray-800 px-4 rounded-full text-gray-500 m-1
+}
+
+.page-item.previous a {
+    @apply inline-flex h-10 justify-center items-center bg-gray-800 px-4 rounded-full text-gray-300 m-1
+}
+
+.page-item.page-number.active a {
+    @apply inline-flex h-10 w-10 justify-center items-center bg-amber-400 px-2 rounded-full text-gray-300 hover:bg-amber-400 transition-colors duration-150 m-1 ease-in-out
+}
+
+.page-item.page-number a {
+    @apply inline-flex h-10 w-10 justify-center items-center bg-gray-800 px-2 rounded-full text-gray-300 hover:bg-amber-400 transition-colors duration-150 m-1 ease-in-out
+}
+
+.page-item.next.disabled a{
+    @apply inline-flex h-10 justify-center items-center bg-gray-800 px-4 rounded-full text-gray-500 m-1
+} 
+
+.page-item.last.disabled a{
+    display: none
+} 
+
+.page-item.next a{
+    @apply inline-flex h-10 justify-center items-center bg-gray-800 px-4 rounded-full text-gray-300 m-1
+} 
+
+.page-item.last a{
+    display: none
+} 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

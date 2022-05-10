@@ -24,6 +24,7 @@ export default {
   plugins: [
     { src: "~/plugins/aos", ssr: false },
     { src: "~/plugins/formate-date" },
+    { src: "~/plugins/jw-pagination" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

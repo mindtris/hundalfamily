@@ -184,7 +184,7 @@
           >
             <!-- 1st article -->
             <article
-              v-for="(post, index) in posts"
+              v-for="(post, index) in pageOfItems"
               :key="index"
               class="flex flex-col h-full"
               data-aos="fade-up"
@@ -1134,7 +1134,7 @@
         </div>
 
         <!-- Pagination -->
-        <nav
+        <!-- <nav
           class="flex justify-center pt-16"
           role="navigation"
           aria-label="Pagination Navigation"
@@ -1278,13 +1278,29 @@
               >
             </li>
           </ul>
-        </nav>
+        </nav> -->
+        <div class="flex justify-center pt-16 paginationContainer">
+          <jw-pagination
+            :items="posts"
+            @changePage="onChangePage"
+            :labels="customLabels"
+            :disableDefaultStyles="true"
+            :pageSize="6"
+          ></jw-pagination>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+const customLabels = {
+  first: "First",
+  last: "Last",
+  previous: "Prev",
+  next: "Next",
+};
+
 export default {
   name: "BlogList",
   props: {
@@ -1297,18 +1313,25 @@ export default {
   data() {
     return {
       posts: [],
+      pageOfItems: [],
+      customLabels,
     };
   },
   async mounted() {
-    this.posts = await this.fetchPosts();
+    this.pageOfItems = this.posts = await this.fetchPosts();
+    console.log(this.posts);
+    console.log(this.pageOfItems);
   },
   methods: {
     async fetchPosts() {
       return this.$content("blog")
         .sortBy("createdAt", "desc")
-        .limit(9)
         .fetch()
         .catch((err) => console.error(err) || []);
+    },
+    onChangePage(pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems;
     },
   },
 };
