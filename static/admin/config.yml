@@ -125,7 +125,7 @@ collections:
     folder: content/family-member/
     format: "frontmatter"
     create: true
-    slug: "{{fields.createdAt}}-{{slug}}"
+    slug: "{{fields.createdAt}}-{{name}}"
     fields:
       - {
           label: "Created Date",
@@ -140,7 +140,7 @@ collections:
           name: birthdate,
           widget: date,
           default: "",
-          format: "MMM Do YY",
+          format: "YYYY-MM-DD",
           required: true,
         }
       - { label: Image, name: image, widget: image, required: true }

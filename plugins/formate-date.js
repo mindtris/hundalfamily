@@ -7,3 +7,9 @@ Vue.filter("formatDate", (dateStr) =>
     day: "numeric",
   }).format(new Date(dateStr))
 );
+
+Vue.filter("formatDateGetYear", (dateStr) =>
+  Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+  }).format(new Date(dateStr))
+);

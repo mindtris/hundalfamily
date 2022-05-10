@@ -38,6 +38,6 @@
 
 <script>
 export default {
-  name: "HeroAbout",
+  name: "FamilyMembers",
 };
 </script>

@@ -333,7 +333,7 @@
                 <ul class="pl-4">
                   <li>
                     <router-link
-                      to="/contact"
+                      to="/family-members"
                       class="
                         text-sm
                         flex
