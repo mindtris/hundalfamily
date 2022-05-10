@@ -125,7 +125,7 @@ collections:
     folder: content/family-member/
     format: "frontmatter"
     create: true
-    slug: "{{name}}"
+    slug: "{{slug}}"
     fields:
       - { label: Name, name: name, widget: string, required: true }
       - {
