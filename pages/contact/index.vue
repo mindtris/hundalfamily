@@ -47,11 +47,12 @@
                   >
                   <input
                     id="first-name"
+                    name="firstName"
                     type="text"
                     class="
                       form-input
                       w-full
-                      text-gray-300
+                      text-state-700
                       border-red-500
                       focus:border-red-500
                     "
@@ -70,8 +71,9 @@
                   >
                   <input
                     id="last-name"
+                    name="lastName"
                     type="text"
-                    class="form-input w-full text-gray-300"
+                    class="form-input w-full text-state-700"
                     placeholder="Enter your last name"
                     required
                   />
@@ -87,7 +89,8 @@
                   <input
                     id="email"
                     type="email"
-                    class="form-input w-full text-gray-300"
+                    name="email"
+                    class="form-input w-full text-state-700"
                     placeholder="Enter your email address"
                     required
                   />
@@ -102,8 +105,9 @@
                   >
                   <input
                     id="subject"
+                    name="subject"
                     type="text"
-                    class="form-input w-full text-gray-300"
+                    class="form-input w-full text-state-700"
                     placeholder="How can we connect you?"
                     required
                   />
@@ -118,6 +122,7 @@
                   >
                   <select
                     id="country"
+                    name="country"
                     class="form-select w-full text-state-700"
                   >
                     <option>Australia</option>
@@ -138,8 +143,9 @@
                   >
                   <textarea
                     id="message"
+                    name="message"
                     rows="4"
-                    class="form-textarea w-full text-gray-300"
+                    class="form-textarea w-full text-state-700"
                     placeholder="Write your message"
                   ></textarea>
                 </div>
@@ -147,7 +153,11 @@
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
                   <label class="flex items-center">
-                    <input type="checkbox" class="form-checkbox" />
+                    <input
+                      type="checkbox"
+                      name="agreeToPolicy"
+                      class="form-checkbox"
+                    />
                     <span class="text-state-700 ml-2"
                       >I agree to the privacy policy</span
                     >
