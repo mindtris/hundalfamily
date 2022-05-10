@@ -136,7 +136,7 @@ collections:
           format: "MMM Do YY",
           required: true,
         }
-      - { label: Image, name: authorimage, widget: image, required: true }
+      - { label: Image, name: image, widget: image, required: true }
   - name: history
     label: History
     folder: content/history/
