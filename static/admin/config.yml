@@ -127,12 +127,7 @@ collections:
     slug: "{{name}}"
     fields:
       - { label: Title, name: title, widget: string }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "markdown",
-          required: false,
-        }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "projects"
     label: "Projects"
     label_singular: "Project"
