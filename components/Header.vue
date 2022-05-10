@@ -88,7 +88,7 @@
             <Dropdown :showWhiteText="showWhiteText" title="Family">
               <li>
                 <nuxt-link
-                  to="/contact"
+                  to="/family-members"
                   class="
                     font-medium
                     text-sm text-gray-400

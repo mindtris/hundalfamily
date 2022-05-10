@@ -31,19 +31,7 @@
                 alt="Team member 01"
               />
               <h4 class="text-xl font-medium mb-1">Lara Lamprecht</h4>
-              <div class="text-gray-500 mb-1">CEO & Co-founder</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@laraamprecht</a
-              >
+              <div class="text-gray-500 mb-1">(1987)</div>
             </div>
           </div>
 
@@ -63,19 +51,7 @@
                 alt="Team member 02"
               />
               <h4 class="text-xl font-medium mb-1">Marie Koniuszek</h4>
-              <div class="text-gray-500 mb-1">CEO & Co-founder</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@marie_moon</a
-              >
+              <div class="text-gray-500 mb-1">(1990)</div>
             </div>
           </div>
 
@@ -95,19 +71,7 @@
                 alt="Team member 03"
               />
               <h4 class="text-xl font-medium mb-1">Greg Sebastian</h4>
-              <div class="text-gray-500 mb-1">Head of Design</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@mr_sebastian</a
-              >
+              <div class="text-gray-500 mb-1">(1980)</div>
             </div>
           </div>
 
@@ -127,19 +91,7 @@
                 alt="Team member 04"
               />
               <h4 class="text-xl font-medium mb-1">Timothy Chandran</h4>
-              <div class="text-gray-500 mb-1">Product Executive</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@timothychandran</a
-              >
+              <div class="text-gray-500 mb-1">(1982)</div>
             </div>
           </div>
 
@@ -159,19 +111,7 @@
                 alt="Team member 05"
               />
               <h4 class="text-xl font-medium mb-1">Dominik Prasad</h4>
-              <div class="text-gray-500 mb-1">Backend Lead</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@dominikprasad</a
-              >
+              <div class="text-gray-500 mb-1">(1985)</div>
             </div>
           </div>
 
@@ -191,19 +131,7 @@
                 alt="Team member 06"
               />
               <h4 class="text-xl font-medium mb-1">Darya Semenova</h4>
-              <div class="text-gray-500 mb-1">Backend Developer</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@daryamagic</a
-              >
+              <div class="text-gray-500 mb-1">(1995)</div>
             </div>
           </div>
 
@@ -223,19 +151,7 @@
                 alt="Team member 07"
               />
               <h4 class="text-xl font-medium mb-1">Quentin Renvoye</h4>
-              <div class="text-gray-500 mb-1">Product Designer</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@quentinrenvoye</a
-              >
+              <div class="text-gray-500 mb-1">(1987)</div>
             </div>
           </div>
 
@@ -255,19 +171,7 @@
                 alt="Team member 08"
               />
               <h4 class="text-xl font-medium mb-1">Alyssa Chuzeville</h4>
-              <div class="text-gray-500 mb-1">Community Lead</div>
-              <a
-                class="
-                  block
-                  text-amber-400
-                  hover:text-gray-400
-                  transition
-                  duration-150
-                  ease-in-out
-                "
-                href="#0"
-                >@hello_chuzeville</a
-              >
+              <div class="text-gray-500 mb-1">(1993)</div>
             </div>
           </div>
         </div>
