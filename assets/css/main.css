@@ -77,6 +77,10 @@
     @apply text-purple-600;
 }
 
+.nuxt-content {
+    text-align: start
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
