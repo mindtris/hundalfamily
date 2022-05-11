@@ -13,11 +13,17 @@
 
         <!-- Team members -->
         <div
-          class="sm:flex sm:flex-wrap sm:justify-center -my-4 sm:-my-8 sm:-mx-3"
+          class="
+            grid
+            md:grid-cols-4
+            justify-center
+            md:gap-x-6 md:gap-y-8
+            items-start
+          "
           data-aos-id-team
         >
           <!-- 1st member -->
-          <div
+          <!-- <div
             v-for="(member, index) in members"
             :key="index"
             class="sm:w-1/2 md:w-1/3 lg:w-1/4 py-4 sm:py-8 sm:px-3"
@@ -36,6 +42,32 @@
               <div class="text-gray-500 mb-1">
                 {{ member.birthdate | formatDateGetYear }}
               </div>
+            </div>
+          </div> -->
+
+          <div
+            v-for="(member, index) in members"
+            :key="index"
+            class="
+              max-w-sm
+              bg-white
+              rounded-lg
+              border border-gray-200
+              shadow-md
+              bg-gray-100
+              w-60
+              mt-3
+              mb-3
+            "
+          >
+            <a href="#">
+              <img class="rounded-t-lg" :src="member.image" alt="" />
+            </a>
+            <div class="p-5">
+              <h4 class="font-medium text-xl text-center">{{ member.name }}</h4>
+              <p class="mb-1 text-center">
+                {{ member.birthdate | formatDateGetYear }}
+              </p>
             </div>
           </div>
 
