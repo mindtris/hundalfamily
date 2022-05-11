@@ -25,6 +25,6 @@
 
 <script>
 export default {
-  name: "Family Members",
+  name: "Members",
 };
 </script>
