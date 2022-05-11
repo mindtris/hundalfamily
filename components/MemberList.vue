@@ -12,7 +12,7 @@
           "
         >
           <div
-            v-for="(member, index) in members"
+            v-for="(member, index) in pageOfItems"
             :key="index"
             class="
               max-w-sm
@@ -219,27 +219,51 @@
             </div>
           </div> -->
         </div>
+
+        <div class="flex justify-center pt-16 paginationContainer">
+          <jw-pagination
+            :items="members"
+            @changePage="onChangePage"
+            :labels="customLabels"
+            :disableDefaultStyles="true"
+            :pageSize="8"
+            :maxPages="10"
+          ></jw-pagination>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+const customLabels = {
+  first: "First",
+  last: "Last",
+  previous: "Prev",
+  next: "Next",
+};
+
 export default {
   name: "MemberList",
   data() {
     return {
       members: [],
+      pageOfItems: [],
+      customLabels,
     };
   },
   async mounted() {
-    this.members = await this.fetchMembers();
+    this.pageOfItems = this.members = await this.fetchMembers();
   },
   methods: {
     async fetchMembers() {
       return this.$content("family-member")
         .fetch()
         .catch((err) => console.error(err) || []);
+    },
+    onChangePage(pageOfItems) {
+      // update page of items
+      this.pageOfItems = pageOfItems;
     },
   },
 };

@@ -1319,8 +1319,6 @@ export default {
   },
   async mounted() {
     this.pageOfItems = this.posts = await this.fetchPosts();
-    console.log(this.posts);
-    console.log(this.pageOfItems);
   },
   methods: {
     async fetchPosts() {
