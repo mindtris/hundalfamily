@@ -103,7 +103,7 @@
               </li>
               <li>
                 <nuxt-link
-                  to="/help"
+                  to="/family-tree"
                   class="
                     font-medium
                     text-sm text-gray-400
@@ -347,7 +347,7 @@
                   </li>
                   <li>
                     <router-link
-                      to="/help"
+                      to="/family-tree"
                       class="
                         text-sm
                         flex
