@@ -14,7 +14,7 @@
       </div> -->
 
       <!-- Page sections -->
-      <FamilyMembers />
+      <FamilyMembers title="Good People of Hundal Clan" />
       <MemberList />
     </main>
 
@@ -26,5 +26,11 @@
 <script>
 export default {
   name: "Members",
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>

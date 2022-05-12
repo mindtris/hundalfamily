@@ -26,9 +26,14 @@
               mb-3
             "
           >
-            <a href="#">
+            <nuxt-link
+              :to="{
+                name: 'family-member-detail',
+                params: { fileName: member.slug },
+              }"
+            >
               <img class="rounded-t-lg" :src="member.image" alt="" />
-            </a>
+            </nuxt-link>
             <div class="p-5">
               <h4 class="font-medium text-xl text-center">{{ member.name }}</h4>
               <p class="mb-1 text-center">

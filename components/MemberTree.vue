@@ -102,9 +102,7 @@ export default {
     };
   },
   methods: {
-    cardClick(item) {
-      console.log(item);
-    },
+    cardClick(item) {},
   },
 };
 </script>

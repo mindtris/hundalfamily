@@ -17,21 +17,60 @@
 
     <!-- Hero content -->
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
-      <div class="pt-32 pb-12 md:pt-40 md:pb-20">
-        <div class="max-w-3xl mx-auto text-center">
-          <h1 class="h1 mb-4 text-white" data-aos="fade-up">
-            Good People of Hundal Clan
-          </h1>
-          <!-- <p
+      <template v-if="birthdate">
+        <div class="pb-12 pt-28 md:pb-20">
+          <div class="flex flex-col items-center">
+            <img
+              class="rounded-full mb-4"
+              :src="image"
+              width="120"
+              height="120"
+              alt="Team member"
+            />
+            <h1 class="h1 mb-4 text-white" data-aos="fade-up">{{ title }}</h1>
+            <div class="text-white mb-2 text-2xl">
+              ( {{ birthdate | formatDateGetYear }} )
+            </div>
+          </div>
+        </div>
+      </template>
+      <template v-else>
+        <div class="pt-32 pb-12 md:pt-40 md:pb-20">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1 class="h1 mb-4 text-white" data-aos="fade-up">{{ title }}</h1>
+            <!-- <p
             class="text-xl text-gray-400 mb-8"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             Developers are trusted to create an engaging experience for their
             companies, so we build tools to help them.
-          </p> -->
+          </p>  -->
+          </div>
         </div>
-      </div>
+      </template>
+
+      <!-- <div class="max-w-3xl mx-auto text-center">
+          <img
+            class="rounded-full mb-4"
+            src="../assets/images/team-member-02.jpg"
+            width="120"
+            height="120"
+            alt="Team member 02"
+          />
+          <h1 class="h1 mb-4 text-white" data-aos="fade-up">{{ title }}</h1>
+          <p class="mb-1 text-center">
+            {{ birthdate | formatDateGetYear }}
+          </p>
+           <p
+            class="text-xl text-gray-400 mb-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Developers are trusted to create an engaging experience for their
+            companies, so we build tools to help them.
+          </p> 
+        </div> -->
     </div>
   </section>
 </template>
@@ -39,5 +78,19 @@
 <script>
 export default {
   name: "FamilyMembers",
+  props: {
+    title: {
+      type: String,
+      required: false,
+    },
+    birthdate: {
+      type: String,
+      required: false,
+    },
+    image: {
+      type: String,
+      required: false,
+    },
+  },
 };
 </script>
