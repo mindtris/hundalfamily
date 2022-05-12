@@ -17,7 +17,7 @@
                 <img src="../assets/images/logo_transparent.png"  class="w-40"/>
               </nuxt-link>
             </div>
-            <div class="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
+            <div class="text-gray-400">100 Year Journey, Honor the Past, Embrace the Present and Celebrate the Future.</div>
           </div>
 
         </div>
