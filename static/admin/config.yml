@@ -70,7 +70,9 @@ collections:
           name: "author",
           widget: "relation",
           collection: "authors",
-          default: "{{ author-name }}",
+          valueField: name,
+          searchFields: ["name"],
+          displayFields: ["name"],
         }
       - {
           label: "Description",
