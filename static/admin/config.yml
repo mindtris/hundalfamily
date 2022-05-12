@@ -68,7 +68,8 @@ collections:
       - {
           label: "Author",
           name: "author",
-          widget: "string",
+          widget: "relation",
+          collection: "authors",
           default: "{{ author-name }}",
         }
       - {
