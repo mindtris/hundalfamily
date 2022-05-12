@@ -36,7 +36,7 @@
             </li> -->
             <li>
               <nuxt-link
-                to="/features"
+                to="/home"
                 v-bind:class="showWhiteText ? 'text-white' : 'text-state-900'"
                 class="
                   hover:text-state-700
@@ -309,7 +309,7 @@
               </li> -->
               <li>
                 <nuxt-link
-                  to="/features"
+                  to="/home"
                   class="flex text-white hover:text-white py-2"
                   >Home</nuxt-link
                 >
