@@ -116,8 +116,15 @@ collections:
     folder: content/author/
     format: "frontmatter"
     create: true
-    slug: "{{name}}"
+    slug: "{{fields.createdAt}}-{{name}}"
     fields:
+      - {
+          label: "Created Date",
+          name: "createdAt",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+        }
       - { label: Name, name: name, widget: string }
       - { label: Title, name: title, widget: string }
       - { label: Email, name: email, widget: string }
