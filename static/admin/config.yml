@@ -70,7 +70,7 @@ collections:
           name: "author",
           widget: "relation",
           collection: "authors",
-          valueField: slug,
+          valueField: "{{slug}}",
           searchFields: ["name"],
           displayFields: ["name"],
         }
