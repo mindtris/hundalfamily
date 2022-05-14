@@ -1,9 +1,8 @@
 ---
-name: Author 1
-title: Author 1
-email: author1@gmail.com
-shortbio: |-
-  Hi
-  I am Author 1
+createdAt: 2022-05-01T17:51:54.006Z
+name: Whopper Technologies
+title: Whopper Technologies
+email: whoppertechnologies@gmail.com
+shortbio: Hi, I am Author 1
 authorimage: /images/team-member-01.jpg
 ---
