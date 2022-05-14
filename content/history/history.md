@@ -1,11 +1,12 @@
 ---
 title: Bringing the world's ideas to life
 ---
-
 ## A Brief Historical Background:
 
 Waheguru Ji ka Khalsa, Waheguru Ji Ki Fateh!
 <br>
+
+![](/images/blog_post_01-2048x1152.jpeg "te")
 
 <p>In 1706, Guru Gobind Singh jee sent Baba Banda Singh Bahader, along with five other Sikh warriors, from Nanded South (Hazoor Sahib) to Punjab to fight against oppression. Baba Banda Singh Bahader reached Punjab and launched a campaign against the tyranny of the government. He won many battles from the tyrants and gave appropriate punishments to the enemies of Guru Ghar. As a result of this campaign, he established the Khalsa Raj and minted the Khalsa coin. Baba Banda Singh Bahader's performance shook the Delhi government. The government sent a large army against Baba ji and in 1716 AD, the royal army surrounded him in the fort of Gurdas Nangal. For nine months, Singhs remained besieged in the fort starved and under gruesome conditions. Eventually, Baba Banda Singh Bahader was arrested along with about 700 others Singhs. All of them were taken to Delhi and tortured to death. After this, oppression of the Singhs by the Mughul government continued and Singhs kept retaliating in small groups.</p>
 
