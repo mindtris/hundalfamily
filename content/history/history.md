@@ -1,5 +1,5 @@
 ---
-title: Bringing the world's ideas to life
+title: Wahe Guru Ji Ka Khalsa Wahe Guru Ji Ki Fateh
 ---
 ## A Brief Historical Background:
 
