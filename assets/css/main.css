@@ -129,6 +129,16 @@
     display: none
 } 
 
+.blogArticle p{
+    height: 112px;
+    overflow: hidden;
+}
+
+.blogArticle h3{
+    height: 65px;
+    overflow: hidden;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

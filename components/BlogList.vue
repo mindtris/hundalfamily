@@ -187,7 +187,7 @@
             <article
               v-for="(post, index) in pageOfItems"
               :key="index"
-              class="flex flex-col h-full"
+              class="flex flex-col h-full blogArticle"
               data-aos="fade-up"
             >
               <header>
