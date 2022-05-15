@@ -1,9 +1,8 @@
 ---
-title: Wahe Guru Ji Ka Khalsa Wahe Guru Ji Ki Fateh
+title: ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖ਼ਾਲਸਾ ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫ਼ਤਿਹ!
 ---
 ## A Brief Historical Background:
 
-Waheguru Ji ka Khalsa, Waheguru Ji Ki Fateh!
 <br>
 
 ![](/images/blog_post_01-2048x1152.jpeg "te")
