@@ -180,6 +180,7 @@
 
           <!-- Articles container -->
           <div
+            v-if="showBlogs"
             class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start"
           >
             <!-- 1st article -->
@@ -269,7 +270,7 @@
                 <a href="#0">
                   <img
                     class="rounded-full flex-shrink-0 mr-4"
-                    src="../assets/images/news-author-01.jpg"
+                    :src="post.authorImage"
                     width="40"
                     height="40"
                     alt="Author 01"
@@ -277,6 +278,7 @@
                 </a>
                 <div class="font-medium">
                   <a
+                    key="post.authorName"
                     class="
                       text-gray-400
                       hover:text-gray-400
@@ -285,7 +287,7 @@
                       ease-in-out
                     "
                     href="#0"
-                    >{{ post.author }}</a
+                    >{{ post.authorName }}</a
                   >
                   <span class="text-gray-700"> - </span>
                   <span class="text-gray-500">{{
@@ -1313,23 +1315,48 @@ export default {
   data() {
     return {
       posts: [],
+      author: [],
       pageOfItems: [],
       customLabels,
+      showBlogs: false,
+      noOfPosts: 0,
     };
   },
   async mounted() {
     this.pageOfItems = this.posts = await this.fetchPosts();
+    this.noOfPosts = this.posts.length;
+    this.posts.forEach(async (post, i) => {
+      let a = await this.getAuthorName(post.author);
+      this.posts[i].authorName = a.name;
+      this.posts[i].authorImage = a.authorimage;
+      console.log(a);
+      if (i == this.noOfPosts - 1) this.showBlogs = true;
+    });
+    this.author = [];
   },
   methods: {
     async fetchPosts() {
-      return this.$content("blog")
+      return this.$content("blog", { deep: true })
         .sortBy("createdAt", "desc")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+    async fetchAuthors(slug) {
+      return this.$content("author", slug)
         .fetch()
         .catch((err) => console.error(err) || []);
     },
     onChangePage(pageOfItems) {
       // update page of items
       this.pageOfItems = pageOfItems;
+    },
+    async getAuthorName(slug) {
+      return await this.fetchAuthors(slug);
+    },
+
+    async getName(slug) {
+      let author = await this.fetchAuthors(slug);
+      return Promise.resolve(author.name);
     },
   },
 };
