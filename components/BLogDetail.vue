@@ -18,16 +18,17 @@
             />
           </div>
           <div class="flex px-8 py-8">
-            <div>
-              <article
-                class="
-                  flex flex-row
-                  sm:flex-col
-                  lg:flex-row
-                  justify-center
-                  h-full
-                "
-              >
+            <article
+              class="
+                flex flex-row
+                xs:flex-col
+                sm:flex-col
+                lg:flex-row
+                justify-center
+                h-full
+              "
+            >
+              <div class="pr-5 mx-auto">
                 <img
                   class="rounded-full flex-shrink-0 mr-4"
                   :src="blogDetails.authorImage"
@@ -35,42 +36,43 @@
                   height="100"
                   alt="Author"
                 />
-                <div class="">
-                  <header>
-                    <h3 class="h3 text-2xl lg:text-3xl mb-2 text-start">
-                      <nuxt-link
-                        to="/blog-post"
-                        class="
-                          hover:text-gray-400
-                          transition
-                          duration-150
-                          ease-in-out
-                        "
-                        >{{ blogDetails.title }}</nuxt-link
-                      >
-                    </h3>
-                  </header>
-                  <footer class="flex items-center mt-4">
-                    <a
+              </div>
+
+              <div class="">
+                <header>
+                  <h3 class="h3 text-2xl lg:text-3xl mb-2 text-start">
+                    <nuxt-link
+                      to="/blog-post"
                       class="
-                        font-medium
-                        text-gray-400
                         hover:text-gray-400
                         transition
                         duration-150
                         ease-in-out
                       "
-                      href="#0"
-                      >{{ blogDetails.authorName }}</a
+                      >{{ blogDetails.title }}</nuxt-link
                     >
-                    <span class="text-gray-700"> - </span>
-                    <span class="text-gray-500">{{
-                      blogDetails.createdAt | formatDate
-                    }}</span>
-                  </footer>
-                </div>
-              </article>
-            </div>
+                  </h3>
+                </header>
+                <footer class="flex items-center mt-4">
+                  <span
+                    class="
+                      font-medium
+                      text-gray-400
+                      hover:text-gray-400
+                      transition
+                      duration-150
+                      ease-in-out
+                    "
+                    href="#0"
+                    >{{ blogDetails.authorName }}</span
+                  >
+                  <span class="text-gray-700"> - </span>
+                  <span class="text-gray-500">{{
+                    blogDetails.createdAt | formatDate
+                  }}</span>
+                </footer>
+              </div>
+            </article>
             <!-- <div class="px-8">
               <h3 class="h3 mb-2">My First Blog</h3>
               <div class="font-medium">
@@ -110,13 +112,16 @@ export default {
   },
   async mounted() {
     this.fileName = this.$route.params.fileName;
-    this.blogDetails = await this.fetchBlogDetails(this.fileName);
-    this.getAuthorName(this.blogDetails.author).then((author) => {
-      console.log("author", author);
-      this.blogDetails.authorName = author.name;
-      this.blogDetails.authorImage = author.authorimage;
-      this.showBlogDetail = true;
-    });
+    if (this.fileName) {
+      this.fetchBlogDetails(this.fileName).then((blogDetail) => {
+        this.blogDetails = blogDetail;
+        this.getAuthorName(blogDetail.author).then((author) => {
+          this.blogDetails.authorName = author.name;
+          this.blogDetails.authorImage = author.authorimage;
+          this.showBlogDetail = true;
+        });
+      });
+    }
   },
   methods: {
     async fetchBlogDetails(fileName) {
