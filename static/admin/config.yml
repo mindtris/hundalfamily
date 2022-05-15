@@ -84,8 +84,8 @@ collections:
       - name: "tags"
         label: "Tags"
         widget: "list"
-        fields:
-          - { name: "one", label: "One", widget: "string" }
+        # fields:
+        #   - { name: "one", label: "One", widget: "string" }
 
   - name: "home"
     label: "Home"
