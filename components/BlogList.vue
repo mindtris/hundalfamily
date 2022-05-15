@@ -5,7 +5,7 @@
         <!-- Page header -->
         <div class="max-w-3xl pb-12 md:pb-20 text-center md:text-left">
           <h1 class="h1" data-aos="fade-up">
-            Refreshing news for developers and designers
+            Refreshing news for developer and designers
           </h1>
         </div>
 
