@@ -1334,15 +1334,18 @@ export default {
     };
   },
   async mounted() {
-    this.pageOfItems = this.posts = await this.fetchPosts();
-    this.noOfPosts = this.posts.length;
-    this.posts.forEach(async (post, i) => {
-      console.log("tags", post.tags[0].one);
-      let a = await this.getAuthorName(post.author);
-      this.posts[i].authorName = a.name;
-      this.posts[i].authorImage = a.authorimage;
-      if (i == this.noOfPosts - 1) this.showBlogs = true;
+    this.fetchPosts().then((blogs) => {
+      this.pageOfItems = this.posts = blogs;
+      this.noOfPosts = this.posts.length;
+      this.posts.forEach((post, i) => {
+        this.getAuthorName(post.author).then((author) => {
+          this.posts[i].authorName = author.name;
+          this.posts[i].authorImage = author.authorimage;
+          if (i == this.noOfPosts - 1) this.showBlogs = true;
+        });
+      });
     });
+
     this.author = [];
   },
   methods: {
