@@ -1,5 +1,5 @@
 ---
-title: Wahe Guru Ji Ka Khalsa Wahe Guru Ji Ki Fateh
+title: ਵਾਹਿਗੁਰੂ ਜੀ ਕਾ ਖ਼ਾਲਸਾ ਵਾਹਿਗੁਰੂ ਜੀ ਕੀ ਫ਼ਤਿਹ!
 ---
 ## A Brief Historical Background:
 
