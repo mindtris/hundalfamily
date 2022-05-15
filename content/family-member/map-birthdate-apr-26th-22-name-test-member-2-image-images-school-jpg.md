@@ -1,5 +1,5 @@
 ---
 name: Test Member 2
-birthdate: Apr 26th 22
+birthdate: 1982-03-03
 image: /images/school.jpg
 ---

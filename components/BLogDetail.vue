@@ -3,7 +3,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="py-12 md:py-20">
         <!-- Section header -->
-        <div class="max-w-3xl mx-auto pb-12 md:pb-20">
+        <div v-if="showBlogDetail" class="max-w-3xl mx-auto pb-12 md:pb-20">
           <div
             class="relative flex justify-center items-center"
             data-aos="fade-up"
@@ -11,22 +11,13 @@
           >
             <img
               class="mx-auto"
-              src="../assets/images/hero-image-01.jpg"
+              :src="blogDetails.blogimage"
               width="1024"
               height="504"
               alt="Hero"
             />
           </div>
           <div class="flex px-8 py-8">
-            <!-- <div>
-              <img
-                class="rounded-full flex-shrink-0 mr-4"
-                src="../assets/images/news-author-01.jpg"
-                width="100"
-                height="100"
-                alt="Author 01"
-              />
-            </div> -->
             <div>
               <article
                 class="
@@ -39,7 +30,7 @@
               >
                 <img
                   class="rounded-full flex-shrink-0 mr-4"
-                  src="../assets/images/news-author-01.jpg"
+                  :src="blogDetails.authorImage"
                   width="100"
                   height="100"
                   alt="Author"
@@ -55,7 +46,7 @@
                           duration-150
                           ease-in-out
                         "
-                        >Designing a functional workflow at home.</nuxt-link
+                        >{{ blogDetails.title }}</nuxt-link
                       >
                     </h3>
                   </header>
@@ -70,10 +61,12 @@
                         ease-in-out
                       "
                       href="#0"
-                      >Chris Solerieu</a
+                      >{{ blogDetails.authorName }}</a
                     >
                     <span class="text-gray-700"> - </span>
-                    <span class="text-gray-500">Jan 19, 2020</span>
+                    <span class="text-gray-500">{{
+                      blogDetails.createdAt | formatDate
+                    }}</span>
                   </footer>
                 </div>
               </article>
@@ -111,16 +104,33 @@ export default {
   data() {
     return {
       blogDetails: {},
+      fileName: "",
+      showBlogDetail: false,
     };
   },
   async mounted() {
-    this.blogDetails = await this.fetchBlogDetails();
+    this.fileName = this.$route.params.fileName;
+    this.blogDetails = await this.fetchBlogDetails(this.fileName);
+    this.getAuthorName(this.blogDetails.author).then((author) => {
+      console.log("author", author);
+      this.blogDetails.authorName = author.name;
+      this.blogDetails.authorImage = author.authorimage;
+      this.showBlogDetail = true;
+    });
   },
   methods: {
-    async fetchBlogDetails() {
-      return this.$content("blog", "2022-05-03t16-16-38-333z-my-first-blog")
+    async fetchBlogDetails(fileName) {
+      return this.$content("blog", fileName)
         .fetch()
         .catch((err) => console.error(err) || []);
+    },
+    async fetchAuthors(slug) {
+      return this.$content("author", slug)
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+    async getAuthorName(slug) {
+      return await this.fetchAuthors(slug);
     },
   },
 };

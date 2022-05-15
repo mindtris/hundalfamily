@@ -191,7 +191,13 @@
               data-aos="fade-up"
             >
               <header>
-                <nuxt-link to="/blog-post" class="block mb-6">
+                <nuxt-link
+                  :to="{
+                    name: 'blog-post',
+                    params: { fileName: post.slug },
+                  }"
+                  class="block mb-6"
+                >
                   <figure class="relative pb-9/16 rounded-sm">
                     <img
                       class="
@@ -1324,12 +1330,12 @@ export default {
   },
   async mounted() {
     this.pageOfItems = this.posts = await this.fetchPosts();
+    console.log(this.pageOfItems);
     this.noOfPosts = this.posts.length;
     this.posts.forEach(async (post, i) => {
       let a = await this.getAuthorName(post.author);
       this.posts[i].authorName = a.name;
       this.posts[i].authorImage = a.authorimage;
-      console.log(a);
       if (i == this.noOfPosts - 1) this.showBlogs = true;
     });
     this.author = [];
