@@ -39,7 +39,6 @@ export default {
   async mounted() {
     this.fileName = this.$route.params.fileName;
     this.member = await this.fetchMemberName();
-    console.log("member", this.member);
   },
   methods: {
     async fetchMemberName() {

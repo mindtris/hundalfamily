@@ -1333,9 +1333,9 @@ export default {
   },
   async mounted() {
     this.pageOfItems = this.posts = await this.fetchPosts();
-    console.log(this.pageOfItems);
     this.noOfPosts = this.posts.length;
     this.posts.forEach(async (post, i) => {
+      console.log("tags", post.tags[0].one);
       let a = await this.getAuthorName(post.author);
       this.posts[i].authorName = a.name;
       this.posts[i].authorImage = a.authorimage;
