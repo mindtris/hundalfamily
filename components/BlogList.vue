@@ -258,7 +258,10 @@
                 </div>
                 <h3 class="h4 mb-2">
                   <nuxt-link
-                    to="/blog-post"
+                    :to="{
+                      name: 'blog-post',
+                      params: { fileName: post.slug },
+                    }"
                     class="
                       hover:text-gray-400
                       transition
