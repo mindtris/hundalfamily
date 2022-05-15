@@ -217,8 +217,11 @@
                   </figure>
                 </nuxt-link>
                 <div class="mb-3">
-                  <ul class="flex flex-wrap text-xs font-medium -m-1">
-                    <li class="m-1">
+                  <ul
+                    v-if="post.tags"
+                    class="flex flex-wrap text-xs font-medium -m-1"
+                  >
+                    <li v-for="(tag, i) in post.tags" :key="i" class="m-1">
                       <a
                         class="
                           inline-flex
@@ -226,17 +229,16 @@
                           py-1
                           px-3
                           rounded-full
-                          bg-amber-400
-                          hover:bg-amber-400
                           transition
                           duration-150
                           ease-in-out
                         "
+                        :class="i % 2 == 0 ? 'bg-blue-500' : 'bg-amber-400'"
                         href="#0"
-                        >Product</a
+                        >{{ tag.tag }}</a
                       >
                     </li>
-                    <li class="m-1">
+                    <!-- <li class="m-1">
                       <a
                         class="
                           inline-flex
@@ -253,7 +255,7 @@
                         href="#0"
                         >Engineering</a
                       >
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
