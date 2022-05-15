@@ -36,6 +36,7 @@
               name="contactUs"
               method="post"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               class="max-w-xl mx-auto"
             >
               <div class="flex flex-wrap -mx-3 mb-4">
@@ -45,7 +46,7 @@
                     for="first-name"
                     >First Name <span class="text-red-600">*</span></label
                   >
-                  <input type="hidden" name="contactUs" value="contact" />
+                  <input type="hidden" name="form-name" value="contactUs" />
                   <input
                     id="first-name"
                     name="firstName"
