@@ -26,9 +26,11 @@
                 lg:flex-row
                 justify-center
                 h-full
+                xs:w-full
+                sm:w-auto
               "
             >
-              <div class="pr-5 mx-auto">
+              <div class="sm:pr-5 mx-auto">
                 <img
                   class="rounded-full flex-shrink-0 mr-4"
                   :src="blogDetails.authorImage"
