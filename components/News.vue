@@ -4,14 +4,18 @@
       <div class="py-12 md:py-20 border-gray-800">
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2" data-aos="fade-up">
-            Refreshing news for developers and designers
+          <h2 class="h2 mb-4" data-aos="fade-up">
+            {{ sectionFourDetails.header }}
           </h2>
+          <p class="text-xl text-gray-400">
+            {{ sectionFourDetails.paragraph }}
+          </p>
         </div>
 
         <!-- Articles list -->
         <div class="max-w-sm mx-auto md:max-w-none">
           <div
+            v-if="showBlogs"
             class="grid gap-12 md:grid-cols-3 md:gap-x-6 md:gap-y-8 items-start"
           >
             <!-- 1st article -->
@@ -101,7 +105,7 @@
                 <a href="#0">
                   <img
                     class="rounded-full flex-shrink-0 mr-4"
-                    src="../assets/images/news-author-01.jpg"
+                    :src="post.authorImage"
                     width="40"
                     height="40"
                     alt="Author 01"
@@ -117,7 +121,7 @@
                       ease-in-out
                     "
                     href="#0"
-                    >{{ post.author }}</a
+                    >{{ post.authorName }}</a
                   >
                   <span class="text-gray-700"> - </span>
                   <span class="text-gray-500">{{
@@ -359,18 +363,45 @@ export default {
   data() {
     return {
       posts: [],
+      sectionFourDetails: {},
+      showBlogs: false,
     };
   },
   async mounted() {
-    this.posts = await this.fetchPosts();
+    this.fetchPosts().then((blogs) => {
+      this.posts = blogs;
+      this.noOfPosts = this.posts.length;
+      this.posts.forEach((post, i) => {
+        this.getAuthorName(post.author).then((author) => {
+          this.posts[i].authorName = author.name;
+          this.posts[i].authorImage = author.authorimage;
+          if (i == this.noOfPosts - 1) this.showBlogs = true;
+        });
+      });
+    });
+
+    this.sectionFourDetails = await this.fetchSectionFourDetails();
   },
   methods: {
+    async fetchSectionFourDetails() {
+      return this.$content("home", "section-4")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
     async fetchPosts() {
       return this.$content("blog")
         .sortBy("createdAt", "desc")
         .limit(3)
         .fetch()
         .catch((err) => console.error(err) || []);
+    },
+    async fetchAuthors(slug) {
+      return this.$content("author", slug)
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+    async getAuthorName(slug) {
+      return await this.fetchAuthors(slug);
     },
   },
 };

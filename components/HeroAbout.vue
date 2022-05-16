@@ -20,15 +20,14 @@
       <div class="pt-32 pb-12 md:pt-40 md:pb-20">
         <div class="max-w-3xl mx-auto text-center">
           <h1 class="h1 mb-4 text-white" data-aos="fade-up">
-            The story behind the project
+            {{ history.header }}
           </h1>
           <p
             class="text-xl text-gray-400 mb-8"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Developers are trusted to create an engaging experience for their
-            companies, so we build tools to help them.
+            {{ history.paragraph }}
           </p>
         </div>
       </div>
@@ -39,5 +38,20 @@
 <script>
 export default {
   name: "HeroAbout",
+  data() {
+    return {
+      history: {},
+    };
+  },
+  async mounted() {
+    this.history = await this.fetchHistoryHeader();
+  },
+  methods: {
+    async fetchHistoryHeader() {
+      return this.$content("history", "history-header")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+  },
 };
 </script>
