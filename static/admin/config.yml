@@ -145,6 +145,8 @@ collections:
           required: true,
         }
       - { label: Image, name: image, widget: image, required: true }
+      - { label: Nickname, name: nickname, widget: string, required: true }
+      - { label: Is Star, name: starred, widget: boolean, default: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: history
     label: History

@@ -4,22 +4,15 @@
       <div class="py-12 md:py-20 border-gray-800">
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2 mb-4">Our passionate team</h2>
+          <h2 class="h2 mb-4">{{ sectionThreeDetails.header }}</h2>
           <p class="text-xl text-gray-400">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum consequat.
+            {{ sectionThreeDetails.paragraph }}
           </p>
         </div>
 
         <!-- Team members -->
         <div
-          class="
-            grid
-            md:grid-cols-4
-            justify-center
-            md:gap-x-6 md:gap-y-8
-            items-start
-          "
+          class="sm:flex sm:flex-wrap sm:justify-center -my-4 sm:-my-8 sm:-mx-3"
           data-aos-id-team
         >
           <!-- 1st member -->
@@ -45,7 +38,7 @@
             </div>
           </div> -->
 
-          <div
+          <!-- <div
             v-for="(member, index) in members"
             :key="index"
             class="
@@ -74,27 +67,50 @@
                 {{ member.birthdate | formatDateGetYear }}
               </p>
             </div>
-          </div>
+          </div> -->
 
           <!-- 2nd member -->
-          <!-- <div
+          <div
+            v-for="(member, index) in members"
+            :key="index"
             class="sm:w-1/2 md:w-1/3 lg:w-1/4 py-4 sm:py-8 sm:px-3"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-anchor="[data-aos-id-team]"
           >
             <div class="flex flex-col items-center">
-              <img
-                class="rounded-full mb-4"
-                src="../assets/images/team-member-02.jpg"
-                width="120"
-                height="120"
-                alt="Team member 02"
-              />
-              <h4 class="text-xl font-medium mb-1">Marie Koniuszek</h4>
-              <div class="text-gray-500 mb-1">(1990)</div>
+              <nuxt-link
+                :to="{
+                  name: 'family-member-detail',
+                  params: { fileName: member.slug },
+                }"
+              >
+                <img
+                  class="rounded-full mb-4"
+                  :src="member.image"
+                  width="120"
+                  height="120"
+                  alt="Team member 02"
+                />
+              </nuxt-link>
+              <h4 class="text-xl font-medium mb-1">{{ member.name }}</h4>
+              <div class="text-gray-500 mb-1">
+                ({{ member.birthdate | formatDateGetYear }})
+              </div>
+              <a
+                class="
+                  block
+                  text-amber-400
+                  hover:text-gray-200
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                href="#0"
+                >@{{ member.nickname }}</a
+              >
             </div>
-          </div> -->
+          </div>
 
           <!-- 3rd member -->
           <!-- <div
@@ -227,12 +243,19 @@ export default {
   data() {
     return {
       members: [],
+      sectionThreeDetails: {},
     };
   },
   async mounted() {
     this.members = await this.fetchMembers();
+    this.sectionThreeDetails = await this.fetchSectionThreeDetails();
   },
   methods: {
+    async fetchSectionThreeDetails() {
+      return this.$content("home", "section-3")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
     async fetchMembers() {
       return this.$content("family-member")
         .limit(8)
