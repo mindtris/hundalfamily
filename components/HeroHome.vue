@@ -166,7 +166,6 @@ export default {
   },
   async mounted() {
     this.sectionOneDetail = await this.fetchSectionOneDetail();
-    console.log(this.sectionOneDetail);
   },
   methods: {
     async fetchSectionOneDetail() {

@@ -4,14 +4,15 @@
       <div class="pt-10 pb-12 md:pt-16 md:pb-20">
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2 mb-4" data-aos="fade-up">Built exclusively for you</h2>
+          <h2 class="h2 mb-4" data-aos="fade-up">
+            {{ sectionTwoDetail.header }}
+          </h2>
           <p
             class="text-xl text-gray-400"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit laborum — semper quis lectus nulla.
+            {{ sectionTwoDetail.paragraph }}
           </p>
         </div>
 
@@ -47,7 +48,7 @@
               data-aos="fade-in"
               data-aos-delay="200"
             ></div>
-            <svg
+            <!-- <svg
               class="w-16 h-16 mb-4"
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +73,26 @@
                 stroke-width="2"
                 stroke-linecap="square"
               />
+            </svg> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-history"
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="12 8 12 12 14 14" />
+              <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
             </svg>
-            <h4 class="h4 mb-2">1. Acquisition</h4>
+            <h4 class="h4 mb-2">1. Family History</h4>
             <p class="text-lg text-gray-400 text-center">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              {{ sectionTwoDetail.familyHistory }}
             </p>
           </div>
 
@@ -103,7 +119,7 @@
               data-aos="fade-in"
               data-aos-delay="400"
             ></div>
-            <svg
+            <!-- <svg
               class="w-16 h-16 mb-4"
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
@@ -128,11 +144,28 @@
                   d="M36 32l-4-3-4 3V22h8z"
                 />
               </g>
+            </svg> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-users"
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
             </svg>
-            <h4 class="h4 mb-2">2. Activation</h4>
+            <h4 class="h4 mb-2">2. Family Members</h4>
             <p class="text-lg text-gray-400 text-center">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              {{ sectionTwoDetail.familyMembers }}
             </p>
           </div>
 
@@ -142,7 +175,7 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <svg
+            <!-- <svg
               class="w-16 h-16 mb-4"
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
@@ -167,11 +200,28 @@
                 stroke-width="2"
                 stroke-linecap="square"
               />
+            </svg> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-notes"
+              width="64"
+              height="64"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="#2c3e50"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="5" y="3" width="14" height="18" rx="2" />
+              <line x1="9" y1="7" x2="15" y2="7" />
+              <line x1="9" y1="11" x2="15" y2="11" />
+              <line x1="9" y1="15" x2="13" y2="15" />
             </svg>
-            <h4 class="h4 mb-2">3. Retention</h4>
+            <h4 class="h4 mb-2">3. Family Blogs</h4>
             <p class="text-lg text-gray-400 text-center">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              {{ sectionTwoDetail.familyBlogs }}
             </p>
           </div>
         </div>
@@ -183,5 +233,20 @@
 <script>
 export default {
   name: "Process",
+  data: function () {
+    return {
+      sectionTwoDetail: {},
+    };
+  },
+  async mounted() {
+    this.sectionTwoDetail = await this.fetchSectionTwoDetail();
+  },
+  methods: {
+    async fetchSectionTwoDetail() {
+      return this.$content("home", "section-2")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+  },
 };
 </script>
