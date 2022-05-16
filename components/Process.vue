@@ -92,7 +92,7 @@
             </svg>
             <h4 class="h4 mb-2">1. Family History</h4>
             <p class="text-lg text-gray-400 text-center">
-              {{ sectionTwoDetail.familyHistory }}
+              Discover our ancestor’s arrival, survival and roots of our family.
             </p>
           </div>
 
@@ -165,7 +165,7 @@
             </svg>
             <h4 class="h4 mb-2">2. Family Members</h4>
             <p class="text-lg text-gray-400 text-center">
-              {{ sectionTwoDetail.familyMembers }}
+              Explore the lives of those that came before us and get inspired.
             </p>
           </div>
 
@@ -221,7 +221,7 @@
             </svg>
             <h4 class="h4 mb-2">3. Family Blogs</h4>
             <p class="text-lg text-gray-400 text-center">
-              {{ sectionTwoDetail.familyBlogs }}
+              Discover our ancestral stories through historical records.
             </p>
           </div>
         </div>
