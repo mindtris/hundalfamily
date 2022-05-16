@@ -258,7 +258,7 @@ export default {
     },
     async fetchMembers() {
       return this.$content("family-member")
-        .limit(8)
+        .where({ starred: true })
         .fetch()
         .catch((err) => console.error(err) || []);
     },

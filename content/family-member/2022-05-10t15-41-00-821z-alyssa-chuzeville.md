@@ -4,4 +4,5 @@ name: Alyssa Chuzeville
 birthdate: 1982-03-03
 image: /images/team-member-08.jpg
 nickname: alyssa
+starred: true
 ---
