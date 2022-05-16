@@ -90,27 +90,18 @@ collections:
   - name: "home"
     label: "Home"
     folder: "content/home"
-    create: true
     format: "frontmatter"
-    slug: "{{fields.createdAt}}-{{slug}}"
     # editor:
     #   preview: true
     fields:
+      - { label: "Header", name: "header", widget: "string", required: true }
       - {
-          label: "Created Date",
-          name: "createdAt",
-          widget: "datetime",
-          date_format: "YYYY-MM-DD",
-          time_format: false,
-        }
-      - { label: "Title", name: "title", widget: "string", required: true }
-      - {
-          label: "Description",
-          name: "description",
+          label: "Paragraph",
+          name: "paragraph",
           widget: "string",
-          required: false,
+          required: true,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
+      # - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: authors
     label: Authors
     folder: content/author/

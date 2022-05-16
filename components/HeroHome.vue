@@ -51,19 +51,19 @@
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
           <h1 class="h1 mb-4" data-aos="fade-up">
-            Celebrating the past, present and future
+            {{ sectionOneDetail.header }}
           </h1>
           <p
             class="text-xl text-gray-900 mb-8"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Our landing page template works on all devices, so you only have to
-            set it up once, and get beautiful results forever.
+            {{ sectionOneDetail.paragraph }}
           </p>
           <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
             <div data-aos="fade-up" data-aos-delay="400">
-              <a
+              <nuxt-link
+                to="/family-members"
                 class="
                   btn
                   text-white
@@ -74,11 +74,12 @@
                   sm:w-auto sm:mb-0
                 "
                 href="#0"
-                >Open family members</a
+                >Open family members</nuxt-link
               >
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
-              <a
+              <nuxt-link
+                to="/blog"
                 class="
                   btn
                   text-white
@@ -88,7 +89,7 @@
                   sm:w-auto sm:ml-4
                 "
                 href="#0"
-                >Open family stories</a
+                >Open family stories</nuxt-link
               >
             </div>
           </div>
@@ -160,7 +161,19 @@ export default {
   data: function () {
     return {
       videoModalOpen: false,
+      sectionOneDetail: {},
     };
+  },
+  async mounted() {
+    this.sectionOneDetail = await this.fetchSectionOneDetail();
+    console.log(this.sectionOneDetail);
+  },
+  methods: {
+    async fetchSectionOneDetail() {
+      return this.$content("home", "section-1")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
   },
 };
 </script>
