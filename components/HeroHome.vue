@@ -104,7 +104,7 @@
           >
             <img
               class="mx-auto"
-              src="../assets/images/hero-image-01.jpg"
+              :src="sectionOneDetail.image"
               width="1024"
               height="504"
               alt="Hero"
@@ -148,6 +148,20 @@
               </svg>
             </a>
           </div>
+          <!-- Modal -->
+          <Modal
+            id="modal"
+            ariaLabel="modal-headline"
+            :show="videoModalOpen"
+            @handleClose="videoModalOpen = false"
+          >
+            <iframe
+              class="w-full h-full"
+              :src="sectionOneDetail.videoLink"
+              title="Video"
+              allowFullScreen
+            ></iframe>
+          </Modal>
         </div>
       </div>
     </div>
@@ -155,9 +169,10 @@
 </template>
 
 <script>
+import Modal from "../components/Modal.vue";
 export default {
   name: "HeroHome",
-  components: {},
+  components: { Modal },
   data: function () {
     return {
       videoModalOpen: false,

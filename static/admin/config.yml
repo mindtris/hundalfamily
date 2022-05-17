@@ -101,6 +101,13 @@ collections:
           widget: "string",
           required: true,
         }
+      - { label: "Image", name: "image", widget: "string", required: false }
+      - {
+          label: "Video Link",
+          name: "videoLink",
+          widget: "string",
+          required: false,
+        }
       # - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: authors
     label: Authors
