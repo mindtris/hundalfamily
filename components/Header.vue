@@ -487,12 +487,15 @@
                     justify-center
                     items-center
                     text-amber-400
-                    bg-gray-800
+                    bg-white
                     hover:text-gray-100 hover:bg-amber-400
                     rounded-full
                     transition
                     duration-150
                     ease-in-out
+                    w-fit
+                    mx-auto
+                    mb-1
                   "
                   aria-label="Twitter"
                 >
@@ -515,12 +518,15 @@
                     justify-center
                     items-center
                     text-amber-400
-                    bg-gray-800
+                    bg-white
                     hover:text-gray-100 hover:bg-amber-400
                     rounded-full
                     transition
                     duration-150
                     ease-in-out
+                    w-fit
+                    mx-auto
+                    mb-1
                   "
                   aria-label="Facebook"
                 >
@@ -543,12 +549,15 @@
                     justify-center
                     items-center
                     text-amber-400
-                    bg-gray-800
+                    bg-white
                     hover:text-gray-100 hover:bg-amber-400
                     rounded-full
                     transition
                     duration-150
                     ease-in-out
+                    w-fit
+                    mx-auto
+                    mb-1
                   "
                   aria-label="Instagram"
                 >
