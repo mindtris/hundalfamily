@@ -4,7 +4,7 @@
     <div class="absolute inset-0">
       <img
         class="w-full h-full object-cover"
-        src="../assets/images/about-hero.jpg"
+        src="../assets/images/family-member-bg.jpg"
         width="1440"
         height="394"
         alt="About"

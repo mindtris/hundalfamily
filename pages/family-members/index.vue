@@ -14,7 +14,7 @@
       </div> -->
 
       <!-- Page sections -->
-      <FamilyMembers title="Good People of Hundal Clan" />
+      <FamilyMembers title="Get to know family members & unfold the roots" />
       <MemberList />
     </main>
 

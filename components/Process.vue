@@ -48,7 +48,7 @@
               data-aos="fade-in"
               data-aos-delay="200"
             ></div>
-            <!-- <svg
+            <svg
               class="w-16 h-16 mb-4"
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
                 height="64"
                 rx="32"
               />
-              <path
+              <!-- <path
                 class="stroke-current text-purple-300"
                 stroke-width="2"
                 stroke-linecap="square"
@@ -72,9 +72,25 @@
                 d="M26 28h12M26 32h12M26 36h5"
                 stroke-width="2"
                 stroke-linecap="square"
-              />
+              /> -->
+            </svg>
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-history"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="12 8 12 12 14 14" />
+              <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
             </svg> -->
-            <svg
+            <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-history"
               width="64"
@@ -89,7 +105,7 @@
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <polyline points="12 8 12 12 14 14" />
               <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
-            </svg>
+            </svg> -->
             <h4 class="h4 mb-2">1. Family History</h4>
             <p class="text-lg text-gray-400 text-center">
               Discover our ancestor’s arrival, survival and roots of our family.

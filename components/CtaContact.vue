@@ -7,7 +7,7 @@
           <!-- CTA content -->
           <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-3/4">
             <h3 class="h3 text-white mb-2">Just want to say hello?</h3>
-            <p class="text-gray-700 text-lg">
+            <p class="text-amber-400 text-lg">
               Drop us a line and we will get back to you shortly.
             </p>
           </div>

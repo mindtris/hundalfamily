@@ -14,7 +14,7 @@
       </div> -->
 
       <!-- Page sections -->
-      <FamilyMembers />
+      <FamilyMembers title="Hundal's Family Tree" />
       <MemberTree />
     </main>
 
