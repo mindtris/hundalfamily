@@ -4,14 +4,18 @@
       <div class="pt-12 pb-12 md:pb-20">
         <div id="app">
           <client-only>
-            <VueFamilyTree :tree="tree" @card-click="cardClick">
+            <CustomFamilyTree :tree="tree" @card-click="cardClick">
               <template v-if="true" v-slot:card="{ item }">
-                <div class="custom-card">
+                <div class="flex flex-col items-center">
                   <div>
-                    <img class="custom-card__image" v-bind:src="item.image" />
+                    <img
+                      class="custom-card__image mb-4"
+                      style="width: 120px; height: 120px"
+                      v-bind:src="item.image"
+                    />
                   </div>
                   <div class="custom-card__info">
-                    <div class="custom-card__name">
+                    <div class="custom-card__name text-xl font-medium mb-1">
                       {{ item.name }}
                     </div>
                     <div v-show="item.age" class="custom-card__age">
@@ -20,7 +24,7 @@
                   </div>
                 </div>
               </template>
-            </VueFamilyTree>
+            </CustomFamilyTree>
           </client-only>
         </div>
       </div>
@@ -40,60 +44,86 @@ export default {
             name: "John Walker",
             image: "/images/team-member-01.jpg",
             age: 1963,
+            relation: "Husband",
           },
           secondPerson: {
             name: "Jannet Grem",
             image: "/images/team-member-02.jpg",
             age: 1970,
+            relation: "Wife",
           },
           children: [
             {
               firstPerson: {
-                name: "Katia",
+                name: "John Walker",
+                image: "/images/team-member-01.jpg",
+                age: 1963,
+                relation: "Wife",
               },
               secondPerson: {
-                name: "Oleg",
+                name: "John Walker",
+                image: "/images/team-member-01.jpg",
+                age: 1963,
+                relation: "Wife",
               },
               children: [
                 {
                   firstPerson: {
-                    name: "Gleb",
+                    name: "John Walker",
+                    image: "/images/team-member-01.jpg",
+                    age: 1963,
                   },
                   secondPerson: {
-                    name: "Viktoriya",
+                    name: "John Walker",
+                    image: "/images/team-member-01.jpg",
+                    age: 1963,
                   },
                   children: [
                     {
                       firstPerson: {
-                        name: "Rim",
+                        name: "John Walker",
+                        image: "/images/team-member-01.jpg",
+                        age: 1963,
                       },
                       secondPerson: {
-                        name: "Natasha",
+                        name: "John Walker",
+                        image: "/images/team-member-01.jpg",
+                        age: 1963,
                       },
                     },
                     {
                       firstPerson: {
-                        name: "Leonid",
+                        name: "John Walker",
+                        image: "/images/team-member-01.jpg",
+                        age: 1963,
                       },
                     },
                   ],
                 },
                 {
                   firstPerson: {
-                    name: "Olga",
+                    name: "John Walker",
+                    image: "/images/team-member-01.jpg",
+                    age: 1963,
                   },
                   secondPerson: {
-                    name: "Nikita",
+                    name: "John Walker",
+                    image: "/images/team-member-01.jpg",
+                    age: 1963,
                   },
                 },
               ],
             },
             {
               firstPerson: {
-                name: "Vitia",
+                name: "John Walker",
+                image: "/images/team-member-01.jpg",
+                age: 1963,
               },
               secondPerson: {
-                name: "Dasha",
+                name: "John Walker",
+                image: "/images/team-member-01.jpg",
+                age: 1963,
               },
             },
           ],
