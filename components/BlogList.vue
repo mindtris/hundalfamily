@@ -73,7 +73,7 @@
                     duration-700
                     ease-out
                   "
-                  src="../assets/images/blog-post-01.jpg"
+                  :src="featuredBlog.blogimage"
                   width="540"
                   height="303"
                   alt="Blog post 01"
@@ -83,7 +83,51 @@
             <div data-aos="fade-left" data-aos-delay="200">
               <header>
                 <div class="mb-3">
-                  <ul class="flex flex-wrap text-xs font-medium -m-1">
+                  <ul
+                    v-if="featuredBlog.tags"
+                    class="flex flex-wrap text-xs font-medium -m-1"
+                  >
+                    <li
+                      v-for="(tag, i) in featuredBlog.tags"
+                      :key="i"
+                      class="m-1"
+                    >
+                      <a
+                        class="
+                          inline-flex
+                          text-center text-gray-100
+                          py-1
+                          px-3
+                          rounded-full
+                          transition
+                          duration-150
+                          ease-in-out
+                        "
+                        :class="i % 2 == 0 ? 'bg-blue-500' : 'bg-amber-400'"
+                        href="#0"
+                        >{{ tag.tag }}</a
+                      >
+                    </li>
+                    <!-- <li class="m-1">
+                      <a
+                        class="
+                          inline-flex
+                          text-center text-gray-100
+                          py-1
+                          px-3
+                          rounded-full
+                          bg-blue-500
+                          hover:bg-blue-600
+                          transition
+                          duration-150
+                          ease-in-out
+                        "
+                        href="#0"
+                        >Engineering</a
+                      >
+                    </li> -->
+                  </ul>
+                  <!-- <ul class="flex flex-wrap text-xs font-medium -m-1">
                     <li class="m-1">
                       <a
                         class="
@@ -120,10 +164,23 @@
                         >Engineering</a
                       >
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
                 <h3 class="h3 text-2xl lg:text-3xl mb-2">
                   <nuxt-link
+                    :to="{
+                      name: 'blog-post',
+                      params: { fileName: featuredBlog.slug },
+                    }"
+                    class="
+                      hover:text-gray-400
+                      transition
+                      duration-150
+                      ease-in-out
+                    "
+                    >{{ featuredBlog.title }}</nuxt-link
+                  >
+                  <!-- <nuxt-link
                     to="/blog-post"
                     class="
                       hover:text-gray-400
@@ -132,13 +189,11 @@
                       ease-in-out
                     "
                     >Designing a functional workflow at home.</nuxt-link
-                  >
+                  > -->
                 </h3>
               </header>
               <p class="text-lg text-gray-400 flex-grow">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
+                {{ featuredBlog.description }}
               </p>
               <footer class="flex items-center mt-4">
                 <a href="#0">
@@ -161,10 +216,12 @@
                       ease-in-out
                     "
                     href="#0"
-                    >Chris Solerieu</a
+                    >{{ featuredBlog.authorName }}</a
                   >
                   <span class="text-gray-700"> - </span>
-                  <span class="text-gray-500">Jan 19, 2020</span>
+                  <span class="text-gray-500">{{
+                    featuredBlog.createdAt | formatDate
+                  }}</span>
                 </div>
               </footer>
             </div>
@@ -1331,17 +1388,22 @@ export default {
       customLabels,
       showBlogs: false,
       noOfPosts: 0,
+      featuredBlog: {},
     };
   },
   async mounted() {
     this.fetchPosts().then((blogs) => {
       this.pageOfItems = this.posts = blogs;
+
       this.noOfPosts = this.posts.length;
       this.posts.forEach((post, i) => {
         this.getAuthorName(post.author).then((author) => {
           this.posts[i].authorName = author.name;
           this.posts[i].authorImage = author.authorimage;
           if (i == this.noOfPosts - 1) this.showBlogs = true;
+          if (i == 1) {
+            this.featuredBlog = this.pageOfItems[0];
+          }
         });
       });
     });
