@@ -26,7 +26,10 @@
             "
           >
             <nuxt-link
-              to="/blog-post"
+              :to="{
+                name: 'blog-post',
+                params: { fileName: featuredBlog.slug },
+              }"
               class="relative block group"
               data-aos="fade-right"
               data-aos-delay="200"
