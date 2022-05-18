@@ -2,7 +2,7 @@
   <section class="relative">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="pt-32 pb-12 md:pt-40 md:pb-20">
-        <div
+        <!-- <div
           class="
             grid
             md:grid-cols-4
@@ -41,8 +41,7 @@
               </p>
             </div>
           </div>
-
-          <!-- <div
+          <div
             class="
               max-w-sm
               bg-white
@@ -222,7 +221,52 @@
               <h4 class="font-medium text-xl text-center">Alyssa Chuzeville</h4>
               <p class="mb-1 text-center">(1993)</p>
             </div>
-          </div> -->
+          </div>
+        </div> -->
+        <div
+          class="sm:flex sm:flex-wrap sm:justify-center -my-4 sm:-my-8 sm:-mx-3"
+        >
+          <div
+            v-for="(member, index) in pageOfItems"
+            :key="index"
+            class="sm:w-1/2 md:w-1/3 lg:w-1/4 py-4 sm:py-8 sm:px-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor="[data-aos-id-team]"
+          >
+            <div class="flex flex-col items-center">
+              <nuxt-link
+                :to="{
+                  name: 'family-member-detail',
+                  params: { fileName: member.slug },
+                }"
+              >
+                <img
+                  class="rounded-full mb-4"
+                  :src="member.image"
+                  width="120"
+                  height="120"
+                  alt="Team member 02"
+                />
+              </nuxt-link>
+              <h4 class="text-xl font-medium mb-1">{{ member.name }}</h4>
+              <div class="text-gray-500 mb-1">
+                ({{ member.birthdate | formatDateGetYear }})
+              </div>
+              <a
+                class="
+                  block
+                  text-amber-400
+                  hover:text-gray-200
+                  transition
+                  duration-150
+                  ease-in-out
+                "
+                href="#0"
+                >@{{ member.nickname }}</a
+              >
+            </div>
+          </div>
         </div>
 
         <div class="flex justify-center pt-16 paginationContainer">
