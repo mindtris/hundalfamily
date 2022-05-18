@@ -48,7 +48,23 @@
               data-aos="fade-in"
               data-aos-delay="200"
             ></div>
-            <svg
+            <div
+              class="
+                w-16
+                h-16
+                rounded-full
+                bg-amber-400
+                flex
+                justify-center
+                item-center
+              "
+            >
+              <img
+                src="../assets/images/history_icon.png"
+                class="w-8 h-8 m-auto"
+              />
+            </div>
+            <!-- <svg
               class="w-16 h-16 mb-4"
               viewBox="0 0 64 64"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +75,12 @@
                 height="64"
                 rx="32"
               />
-              <!-- <path
+              <image
+                width="64"
+                height="64"
+                xlink:href="../assets/images/history_icon.png"
+              />
+              <path
                 class="stroke-current text-purple-300"
                 stroke-width="2"
                 stroke-linecap="square"
@@ -72,8 +93,8 @@
                 d="M26 28h12M26 32h12M26 36h5"
                 stroke-width="2"
                 stroke-linecap="square"
-              /> -->
-            </svg>
+              />
+            </svg> -->
             <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-history"
@@ -161,7 +182,7 @@
                 />
               </g>
             </svg> -->
-            <svg
+            <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-users"
               width="64"
@@ -178,7 +199,23 @@
               <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
               <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-            </svg>
+            </svg> -->
+            <div
+              class="
+                w-16
+                h-16
+                rounded-full
+                bg-amber-400
+                flex
+                justify-center
+                item-center
+              "
+            >
+              <img
+                src="../assets/images/family_member_icon.png"
+                class="w-8 h-8 m-auto"
+              />
+            </div>
             <h4 class="h4 mb-2">2. Family Members</h4>
             <p class="text-lg text-gray-400 text-center">
               Explore the lives of those that came before us and get inspired.
@@ -217,7 +254,7 @@
                 stroke-linecap="square"
               />
             </svg> -->
-            <svg
+            <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-notes"
               width="64"
@@ -234,7 +271,23 @@
               <line x1="9" y1="7" x2="15" y2="7" />
               <line x1="9" y1="11" x2="15" y2="11" />
               <line x1="9" y1="15" x2="13" y2="15" />
-            </svg>
+            </svg> -->
+            <div
+              class="
+                w-16
+                h-16
+                rounded-full
+                bg-amber-400
+                flex
+                justify-center
+                item-center
+              "
+            >
+              <img
+                src="../assets/images/blog_icon.png"
+                class="w-8 h-8 m-auto"
+              />
+            </div>
             <h4 class="h4 mb-2">3. Family Blogs</h4>
             <p class="text-lg text-gray-400 text-center">
               Discover our ancestral stories through historical records.
