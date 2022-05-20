@@ -194,6 +194,7 @@ collections:
           valueField: "{{slug}}",
           searchFields: ["name"],
           displayFields: ["name"],
+          required: false,
         }
       - {
           label: "Husband",
@@ -203,6 +204,7 @@ collections:
           valueField: "{{slug}}",
           searchFields: ["name"],
           displayFields: ["name"],
+          required: false,
         }
   - name: history
     label: History
