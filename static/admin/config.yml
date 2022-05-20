@@ -169,7 +169,14 @@ collections:
           date_format: "YYYY-MM-DD",
           time_format: false,
         }
-      - { label: Full Name, name: naem, widget: string, required: true }
+      - { label: Full Name, name: name, widget: string, required: true }
+      - {
+          label: Gender,
+          name: gender,
+          widget: select,
+          options: ["Male", "Female"],
+          required: true,
+        }
       - {
           label: Birthdate,
           name: birthdate,
