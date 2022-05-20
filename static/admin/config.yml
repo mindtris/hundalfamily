@@ -155,6 +155,30 @@ collections:
       - { label: Nickname, name: nickname, widget: string, required: true }
       - { label: Is Star, name: starred, widget: boolean, default: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: family-tree
+    label: Family Tree
+    folder: content/family-tree-members/
+    format: "json"
+    create: true
+    slug: "{{fields.createdAt}}-{{name}}"
+    fields:
+      - {
+          label: "Created Date",
+          name: "createdAt",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+        }
+      - { label: Full Name, name: naem, widget: string, required: true }
+      - {
+          label: Birthdate,
+          name: birthdate,
+          widget: date,
+          default: "",
+          format: "YYYY-MM-DD",
+          required: true,
+        }
+      - { label: Image, name: image, widget: image, required: true }
   - name: history
     label: History
     folder: content/history/
