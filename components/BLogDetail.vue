@@ -4,19 +4,6 @@
       <div class="py-12 md:py-20">
         <!-- Section header -->
         <div v-if="showBlogDetail" class="max-w-3xl mx-auto pb-12 md:pb-20">
-          <div
-            class="relative flex justify-center items-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              class="mx-auto"
-              :src="blogDetails.blogimage"
-              width="1024"
-              height="504"
-              alt="Hero"
-            />
-          </div>
           <div class="flex px-8 py-8">
             <article
               class="
@@ -92,6 +79,19 @@
                 <span class="text-gray-500">May 9, 2022</span>
               </div>
             </div> -->
+          </div>
+          <div
+            class="relative flex justify-center items-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              class="mx-auto"
+              :src="blogDetails.blogimage"
+              width="1024"
+              height="504"
+              alt="Hero"
+            />
           </div>
           <div class="prose">
             <nuxt-content class="w-198" :document="blogDetails" />
