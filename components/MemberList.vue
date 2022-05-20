@@ -275,7 +275,7 @@
             @changePage="onChangePage"
             :labels="customLabels"
             :disableDefaultStyles="true"
-            :pageSize="8"
+            :pageSize="16"
             :maxPages="10"
           ></jw-pagination>
         </div>
