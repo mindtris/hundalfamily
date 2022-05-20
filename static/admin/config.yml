@@ -192,7 +192,16 @@ collections:
           widget: "relation",
           collection: "family-tree",
           valueField: "{{slug}}",
-          searchFields: ["name.gender", "Male"],
+          searchFields: ["name"],
+          displayFields: ["name"],
+        }
+      - {
+          label: "Husband",
+          name: "husband",
+          widget: "relation",
+          collection: "family-tree",
+          valueField: "{{slug}}",
+          searchFields: ["name"],
           displayFields: ["name"],
         }
   - name: history
