@@ -10,8 +10,10 @@ Vue.filter("formatDate", (dateStr) => {
   } else return null;
 });
 
-Vue.filter("formatDateGetYear", (dateStr) =>
-  Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-  }).format(new Date(dateStr))
-);
+Vue.filter("formatDateGetYear", (dateStr) => {
+  if (dateStr) {
+    return Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+    }).format(new Date(dateStr));
+  } else return;
+});

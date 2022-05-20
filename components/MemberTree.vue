@@ -1,18 +1,46 @@
 <template>
   <section class="relative">
-    <div class="max-w-10xl mx-auto px-4 sm:px-6">
+    <div class="hidden md:block max-w-10xl mx-auto px-4 sm:px-6">
       <div class="pt-12 pb-12 md:pb-20">
         <div id="app">
           <client-only>
             <CustomFamilyTree :tree="tree" @card-click="cardClick">
               <template v-if="true" v-slot:card="{ item }">
                 <div class="flex flex-col items-center">
-                  <div>
+                  <div class="relative inline-block">
                     <img
-                      class="custom-card__image mb-4"
+                      class="
+                        inline-block
+                        object-cover
+                        w-12
+                        h-12
+                        rounded-full
+                        bg-amber-400
+                      "
                       style="width: 120px; height: 120px"
                       v-bind:src="item.image"
                     />
+                    <!-- <span
+                      class="
+                        absolute
+                        bottom-0
+                        right-0
+                        inline-block
+                        w-10
+                        h-10
+                        bg-green-600
+                        border-4 border-white
+                        rounded-full
+                      "
+                      >Hello</span
+                    > -->
+                  </div>
+                  <div>
+                    <h6>
+                      <span class="badge badge-secondary">
+                        {{ item.relation }}
+                      </span>
+                    </h6>
                   </div>
                   <div class="custom-card__info">
                     <div class="custom-card__name text-xl font-medium mb-1">
@@ -29,12 +57,51 @@
         </div>
       </div>
     </div>
+    <div class="block md:hidden max-w-10xl mx-auto px-4 sm:px-6">
+      <div class="pt-36 pb-12 md:pb-20">
+        <div
+          v-if="showTreeDataInMobile"
+          class="sm:flex sm:flex-wrap sm:justify-center -my-4 sm:-my-8 sm:-mx-3"
+        >
+          <div
+            v-for="(data, index) in seqData"
+            :key="index"
+            class="sm:w-1/2 md:w-1/3 lg:w-1/4 py-4 sm:py-8 sm:px-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor="[data-aos-id-team]"
+          >
+            <div v-if="data" class="flex flex-col items-center">
+              <img
+                class="rounded-full mb-4"
+                :src="data ? data.image : null"
+                width="120"
+                height="120"
+                alt="Team member 02"
+              />
+              <div>
+                <h6>
+                  <span class="badge badge-secondary">
+                    {{ data ? data.relation : null }}
+                  </span>
+                </h6>
+              </div>
+              <h4 class="text-xl font-medium mb-1">
+                {{ data ? data.name : null }}
+              </h4>
+              <div class="text-gray-500 mb-1">
+                ({{ (data ? data.birthdate : null) | formatDateGetYear }})
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import treeData from "../assets/family-tree-data/tree.json";
-import { v4 as uuidv4 } from "uuid";
 export default {
   name: "MemberTree",
   components: {},
@@ -43,6 +110,7 @@ export default {
       tree: [],
       seqData: [],
       rawData: [],
+      showTreeDataInMobile: false,
     };
   },
   async mounted() {
@@ -69,20 +137,37 @@ export default {
       let childData = [];
 
       children.forEach((data) => {
-        this.seqData.push(data);
+        let firstPerson = { ...data, relation: "Husband" };
+        this.seqData.push(firstPerson);
+        let secondPerson;
         let secondPersonIndex = this.rawData.findIndex(
           (tmp) => tmp.husband == data.slug
         );
-        this.seqData.push(this.rawData[secondPersonIndex]);
+        if (this.rawData[secondPersonIndex]) {
+          secondPerson = {
+            ...this.rawData[secondPersonIndex],
+            relation: "Wife",
+          };
+        }
+        this.seqData.push(secondPerson);
       });
 
       children.forEach((data) => {
         let secondPersonIndex = this.rawData.findIndex(
           (tmp) => tmp.husband == data.slug
         );
+        let firstPerson = { ...data, relation: "Husband" };
+        let secondPerson;
+        if (this.rawData[secondPersonIndex]) {
+          secondPerson = {
+            ...this.rawData[secondPersonIndex],
+            relation: "Wife",
+          };
+        }
+
         childData.push({
-          firstPerson: data,
-          secondPerson: this.rawData[secondPersonIndex],
+          firstPerson: firstPerson,
+          secondPerson: secondPerson,
           children: this.getChildren(data.slug),
         });
       });
@@ -95,13 +180,15 @@ export default {
         (data) => data.father == ""
       );
       let firstPerson = this.rawData[firstPersonIndex];
-      //this.rawData.splice(firstPersonIndex, 1);
+      firstPerson = { ...firstPerson, relation: "Husband" };
+
       this.seqData.push(firstPerson);
       let secondPersonIndex = this.rawData.findIndex(
         (data) => data.husband == firstPerson.slug
       );
       let secondPerson = this.rawData[secondPersonIndex];
-      //this.rawData.splice(secondPersonIndex, 1);
+      secondPerson = { ...secondPerson, relation: "Wife" };
+
       this.seqData.push(secondPerson);
       this.tree.push({
         firstPerson: firstPerson,
@@ -110,6 +197,8 @@ export default {
       });
 
       console.log("seqData", this.seqData);
+
+      this.showTreeDataInMobile = true;
 
       // if(rawData.length > 0){
 
@@ -168,5 +257,22 @@ export default {
     font-size: 12px;
     text-align: center;
   }
+}
+.badge-secondary {
+  color: #fff;
+  background-color: #fb8500;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 </style>
