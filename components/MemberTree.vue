@@ -74,6 +74,12 @@ export default {
           (tmp) => tmp.husband == data.slug
         );
         this.seqData.push(this.rawData[secondPersonIndex]);
+      });
+
+      children.forEach((data) => {
+        let secondPersonIndex = this.rawData.findIndex(
+          (tmp) => tmp.husband == data.slug
+        );
         childData.push({
           firstPerson: data,
           secondPerson: this.rawData[secondPersonIndex],
