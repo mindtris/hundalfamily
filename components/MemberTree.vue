@@ -33,106 +33,82 @@
 </template>
 
 <script>
+import treeData from "../assets/family-tree-data/tree.json";
+import { v4 as uuidv4 } from "uuid";
 export default {
   name: "MemberTree",
   components: {},
   data() {
     return {
-      tree: [
-        {
-          firstPerson: {
-            name: "John Walker",
-            image: "/images/team-member-01.jpg",
-            age: 1963,
-            relation: "Husband",
-          },
-          secondPerson: {
-            name: "Jannet Grem",
-            image: "/images/team-member-02.jpg",
-            age: 1970,
-            relation: "Wife",
-          },
-          children: [
-            {
-              firstPerson: {
-                name: "John Walker",
-                image: "/images/team-member-01.jpg",
-                age: 1963,
-                relation: "Wife",
-              },
-              secondPerson: {
-                name: "John Walker",
-                image: "/images/team-member-01.jpg",
-                age: 1963,
-                relation: "Wife",
-              },
-              children: [
-                {
-                  firstPerson: {
-                    name: "John Walker",
-                    image: "/images/team-member-01.jpg",
-                    age: 1963,
-                  },
-                  secondPerson: {
-                    name: "John Walker",
-                    image: "/images/team-member-01.jpg",
-                    age: 1963,
-                  },
-                  children: [
-                    {
-                      firstPerson: {
-                        name: "John Walker",
-                        image: "/images/team-member-01.jpg",
-                        age: 1963,
-                      },
-                      secondPerson: {
-                        name: "John Walker",
-                        image: "/images/team-member-01.jpg",
-                        age: 1963,
-                      },
-                    },
-                    {
-                      firstPerson: {
-                        name: "John Walker",
-                        image: "/images/team-member-01.jpg",
-                        age: 1963,
-                      },
-                    },
-                  ],
-                },
-                {
-                  firstPerson: {
-                    name: "John Walker",
-                    image: "/images/team-member-01.jpg",
-                    age: 1963,
-                  },
-                  secondPerson: {
-                    name: "John Walker",
-                    image: "/images/team-member-01.jpg",
-                    age: 1963,
-                  },
-                },
-              ],
-            },
-            {
-              firstPerson: {
-                name: "John Walker",
-                image: "/images/team-member-01.jpg",
-                age: 1963,
-              },
-              secondPerson: {
-                name: "John Walker",
-                image: "/images/team-member-01.jpg",
-                age: 1963,
-              },
-            },
-          ],
-        },
-      ],
+      tree: [],
+      seqData: [],
+      rawData: [],
     };
+  },
+  async mounted() {
+    this.getTreeData().then((data) => {
+      this.rawData = data;
+      this.processData();
+    });
   },
   methods: {
     cardClick(item) {},
+    async getTreeData() {
+      return this.fetchTreeData();
+    },
+    async fetchTreeData() {
+      return this.$content("family-tree-members")
+        .fetch()
+        .catch((err) => console.error(err) || []);
+    },
+
+    getChildren(slug) {
+      let children = this.rawData.filter((data) => {
+        return data.father == slug;
+      });
+      let childData = [];
+
+      children.forEach((data) => {
+        this.seqData.push(data);
+        let secondPersonIndex = this.rawData.findIndex(
+          (tmp) => tmp.husband == data.slug
+        );
+        this.seqData.push(this.rawData[secondPersonIndex]);
+        childData.push({
+          firstPerson: data,
+          secondPerson: this.rawData[secondPersonIndex],
+          children: this.getChildren(data.slug),
+        });
+      });
+
+      return childData;
+    },
+
+    processData() {
+      let firstPersonIndex = this.rawData.findIndex(
+        (data) => data.father == ""
+      );
+      let firstPerson = this.rawData[firstPersonIndex];
+      //this.rawData.splice(firstPersonIndex, 1);
+      this.seqData.push(firstPerson);
+      let secondPersonIndex = this.rawData.findIndex(
+        (data) => data.husband == firstPerson.slug
+      );
+      let secondPerson = this.rawData[secondPersonIndex];
+      //this.rawData.splice(secondPersonIndex, 1);
+      this.seqData.push(secondPerson);
+      this.tree.push({
+        firstPerson: firstPerson,
+        secondPerson: secondPerson,
+        children: this.getChildren(firstPerson.slug),
+      });
+
+      console.log("seqData", this.seqData);
+
+      // if(rawData.length > 0){
+
+      // }
+    },
   },
 };
 </script>

@@ -19,6 +19,7 @@
     "nuxt": "^2.15.8",
     "sass": "^1.51.0",
     "sass-loader": "^10.1.1",
+    "uuid": "^8.3.2",
     "vue": "^2.6.14",
     "vue-family-tree": "^0.1.8",
     "vue-server-renderer": "^2.6.14",
