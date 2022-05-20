@@ -18,8 +18,8 @@
                     <div class="custom-card__name text-xl font-medium mb-1">
                       {{ item.name }}
                     </div>
-                    <div v-show="item.age" class="custom-card__age">
-                      ( {{ item.age }} )
+                    <div v-show="item.birthdate" class="custom-card__age">
+                      ( {{ item.birthdate | formatDateGetYear }} )
                     </div>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ export default {
     background-position: 50%;
   }
   &__info {
-    padding-left: 16px;
+    padding-left: 0px;
   }
   &__name {
     font-weight: 600;
