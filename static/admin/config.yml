@@ -186,6 +186,15 @@ collections:
           required: true,
         }
       - { label: Image, name: image, widget: image, required: true }
+      - {
+          label: "Father",
+          name: "father",
+          widget: "relation",
+          collection: "family-tree",
+          valueField: "{{slug}}",
+          searchFields: ["gender", "Male"],
+          displayFields: ["name"],
+        }
   - name: history
     label: History
     folder: content/history/
