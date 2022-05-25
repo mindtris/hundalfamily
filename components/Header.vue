@@ -92,7 +92,7 @@
                   class="
                     font-medium
                     text-sm text-gray-400
-                    hover:text-purple-600
+                    hover:text-gray-400
                     flex
                     py-2
                     px-4
@@ -107,7 +107,7 @@
                   class="
                     font-medium
                     text-sm text-gray-400
-                    hover:text-purple-600
+                    hover:text-gray-400
                     flex
                     py-2
                     px-4
