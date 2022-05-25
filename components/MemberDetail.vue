@@ -4,8 +4,7 @@
       <div class="pb-12 md:pb-20">
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2 mb-4">Short Bio</h2>
-          <div class="prose mx-auto">
+          <div class="prose max-w-full">
             <nuxt-content :document="memberDetail" />
           </div>
         </div>
