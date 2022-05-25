@@ -79,7 +79,7 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
               <nuxt-link
-                to="/blog"
+                to="/projects"
                 class="
                   btn
                   text-white
