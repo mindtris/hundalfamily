@@ -185,7 +185,7 @@ collections:
           format: "YYYY-MM-DD",
           required: true,
         }
-      - { label: Image, name: image, widget: image, required: true }
+      - { label: Image, name: image, widget: image, required: false }
       - {
           label: "Father",
           name: "father",
