@@ -27,7 +27,9 @@
               height="120"
               alt="Team member"
             />
-            <h1 class="h1 mb-4 text-white" data-aos="fade-up">{{ title }}</h1>
+            <h1 class="h2 text-center text-white sm:h1" data-aos="fade-up">
+              {{ title }}
+            </h1>
             <div class="text-white mb-2 text-2xl">
               ( {{ birthdate | formatDateGetYear }} )
             </div>
