@@ -4,8 +4,54 @@
       <div class="py-12 md:py-20">
         <!-- Section header -->
         <div v-if="showBlogDetail" class="max-w-3xl mx-auto pb-12 md:pb-20">
-          <div class="flex px-8 py-8">
-            <article
+          <div class="flex py-8">
+            <article style="width: 100%">
+              <div class="text-center md:text-left">
+                <h3 class="h3 text-2xl lg:text-3xl mb-2">
+                  {{ blogDetails.title }}
+                </h3>
+              </div>
+              <div style="display: flex; align-items: center">
+                <div>
+                  <img
+                    class="rounded-full flex-shrink-0 mr-4"
+                    :src="blogDetails.authorImage"
+                    style="width: 40px; height: 40px"
+                    alt="Author"
+                  />
+                </div>
+                <div>
+                  <span
+                    class="
+                      font-medium
+                      text-gray-400
+                      hover:text-gray-400
+                      transition
+                      duration-150
+                      ease-in-out
+                    "
+                    href="#0"
+                    >{{ blogDetails.authorName }} -
+                    {{ blogDetails.createdAt | formatDate }}</span
+                  >
+                </div>
+                <!-- <div style="padding: 0 5px">-</div>
+                <div>
+                  <span
+                    class="
+                      font-medium
+                      text-gray-400
+                      hover:text-gray-400
+                      transition
+                      duration-150
+                      ease-in-out
+                    "
+                    >{{ blogDetails.createdAt | formatDate }}</span
+                  >
+                </div> -->
+              </div>
+            </article>
+            <!-- <article
               class="
                 flex flex-row
                 xs:flex-col
@@ -61,7 +107,7 @@
                   }}</span>
                 </footer>
               </div>
-            </article>
+            </article> -->
             <!-- <div class="px-8">
               <h3 class="h3 mb-2">My First Blog</h3>
               <div class="font-medium">
