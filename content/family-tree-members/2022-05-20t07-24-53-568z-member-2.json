@@ -1,8 +1,9 @@
 {
   "birthdate": "2022-05-05",
   "createdAt": "2022-05-20T07:24:53.568Z",
-  "name": "Member-2",
+  "name": "Pandu",
   "gender": "Female",
-  "image": "/images/team-member-01.jpg",
-  "husband": "2022-05-20t07-22-54-093z-member-1"
+  "image": "",
+  "husband": "",
+  "father": "2022-05-20t07-22-54-093z-member-1"
 }
