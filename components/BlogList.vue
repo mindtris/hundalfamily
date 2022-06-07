@@ -340,10 +340,10 @@
               <footer class="flex items-center mt-4">
                 <a href="#0">
                   <img
-                    class="rounded-full flex-shrink-0 mr-4"
+                    class="rounded-full flex-shrink-0 mr-4 h-10 w-10"
                     :src="post.authorImage"
-                    width="40"
-                    height="40"
+                    width="40px"
+                    height="40px"
                     alt="Author 01"
                   />
                 </a>
