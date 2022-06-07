@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- Site header -->
-    <Header :showWhiteText="true" />
+    <Header :showWhiteText="false" />
 
     <!-- Page content -->
     <main class="flex-grow">
-      <BlogDetailHeader />
+      <!-- <BlogDetailHeader /> -->
       <BLogDetail />
     </main>
 
