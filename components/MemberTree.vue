@@ -217,7 +217,7 @@ export default {
   margin-top: 60px;
 }
 
-.text-center {
+.custom-text-center {
   text-align: center;
   margin-bottom: 32px;
 }
