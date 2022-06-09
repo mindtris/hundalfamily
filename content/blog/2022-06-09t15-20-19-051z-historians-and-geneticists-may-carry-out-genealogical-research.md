@@ -1,0 +1,24 @@
+---
+createdAt: 2022-06-09T15:20:19.051Z
+title: Historians and geneticists may carry out genealogical research
+author: author-1
+description: The introduction of postgraduate courses in genealogy in recent
+  years has given genealogy more of an academic focus, with the emergence of
+  peer-reviewed journals in this area. Scholarly genealogy is beginning to
+  emerge as a discipline in its own right, with an increasing number of
+  individuals who have obtained genealogical qualifications carrying out
+  research on a diverse range of topics related to genealogy, both within
+  academic institutions and independently.  Historically, in Western societies,
+  the focus of genealogy was on the kinship and descent of rulers and nobles,
+  often arguing or demonstrating the legitimacy of claims to wealth and power.
+  The term often overlapped with heraldry, in which the ancestry of royalty was
+  reflected in their coats of arms.
+blogimage: /images/blog_post_01-2048x1152.jpeg
+tags:
+  - tag: genealogy
+  - tag: geneticists
+---
+
+<p>The introduction of postgraduate courses in genealogy in recent years has given genealogy more of an academic focus, with the emergence of peer-reviewed journals in this area. Scholarly genealogy is beginning to emerge as a discipline in its own right, with an increasing number of individuals who have obtained genealogical qualifications carrying out research on a diverse range of topics related to genealogy, both within academic institutions and independently.</p>
+
+<p>Historically, in Western societies, the focus of genealogy was on the kinship and descent of rulers and nobles, often arguing or demonstrating the legitimacy of claims to wealth and power. The term often overlapped with heraldry, in which the ancestry of royalty was reflected in their coats of arms.</p>
